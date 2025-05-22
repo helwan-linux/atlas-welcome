@@ -6,169 +6,196 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "An error occurred while applying system language:"
-msgstr ""
+msgstr "An error occurred while applying system language:"
 
 msgid "Application Language:"
-msgstr ""
+msgstr "Application Language:"
 
 msgid "Application Theme:"
-msgstr ""
+msgstr "Application Theme:"
 
 msgid "Application language has been changed. Some changes may require an application restart."
-msgstr ""
+msgstr "Application language has been changed. Some changes may require an application restart."
 
 msgid "Apply System Language"
-msgstr ""
+msgstr "Apply System Language"
 
 msgid "Available Disk Space:"
-msgstr ""
+msgstr "Available Disk Space:"
 
 msgid "Clean Old Packages (Keep Last 2 Versions)"
-msgstr ""
+msgstr "Clean Old Packages (Keep Last 2 Versions)"
 
 msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
-msgstr ""
+msgstr "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
 
 msgid "Cleanup Done"
-msgstr ""
+msgstr "Cleanup Done"
 
 msgid "Confirmation"
-msgstr ""
+msgstr "Confirmation"
 
 msgid "Error"
-msgstr ""
+msgstr "Error"
 
 msgid "Failed to apply system language:"
-msgstr ""
+msgstr "Failed to apply system language:"
 
 msgid "Free"
-msgstr ""
+msgstr "Free"
 
 msgid "Info"
-msgstr ""
+msgstr "Info"
 
 msgid "Install Linux LTS"
-msgstr ""
+msgstr "Install Linux LTS"
 
 msgid "Install Linux Zen"
-msgstr ""
+msgstr "Install Linux Zen"
 
 msgid "Invalid system language selected."
-msgstr ""
+msgstr "Invalid system language selected."
 
 msgid "Language Changed"
-msgstr ""
+msgstr "Language Changed"
 
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 msgid "No Pacman cleanup options selected."
-msgstr ""
+msgstr "No Pacman cleanup options selected."
 
 msgid "Open Documentation"
-msgstr ""
+msgstr "Open Documentation"
 
 msgid "Open YouTube Channel"
-msgstr ""
+msgstr "Open YouTube Channel"
 
 msgid "Pacman Cleaner"
-msgstr ""
+msgstr "Pacman Cleaner"
 
 msgid "Pacman cleanup tasks completed."
-msgstr ""
+msgstr "Pacman cleanup tasks completed."
 
 msgid "Performance Monitor"
-msgstr ""
+msgstr "Performance Monitor"
 
 msgid "Processor:"
-msgstr ""
+msgstr "Processor:"
 
 msgid "RAM:"
-msgstr ""
+msgstr "RAM:"
 
 msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
-msgstr ""
+msgstr "Remove Orphan Packages - Packages that are no longer required by any installed package."
 
 msgid "Remove Sync Folders"
-msgstr ""
+msgstr "Remove Sync Folders"
 
 msgid "Remove Uninstalled Packages from Cache"
-msgstr ""
+msgstr "Remove Uninstalled Packages from Cache"
 
 msgid "Removing Sync Folder"
-msgstr ""
+msgstr "Removing Sync Folder"
 
 msgid "Run Pacman Cleanup"
-msgstr ""
+msgstr "Run Pacman Cleanup"
 
 msgid "Running Command"
-msgstr ""
+msgstr "Running Command"
 
 msgid "Running Pacman Cleanup"
-msgstr ""
+msgstr "Running Pacman Cleanup"
 
 msgid "Show System Info Details"
-msgstr ""
+msgstr "Show System Info Details"
 
 msgid "Show on startup"
-msgstr ""
+msgstr "Show on startup"
 
 msgid "Success"
-msgstr ""
+msgstr "Success"
 
 msgid "Sync Cleaner"
-msgstr ""
+msgstr "Sync Cleaner"
 
 msgid "Sync folder removal initiated."
-msgstr ""
+msgstr "Sync folder removal initiated."
 
 msgid "System Cleaner"
-msgstr ""
+msgstr "System Cleaner"
 
 msgid "System Information"
-msgstr ""
+msgstr "System Information"
 
 msgid "System Language"
-msgstr ""
+msgstr "System Language"
 
 msgid "System Language:"
-msgstr ""
+msgstr "System Language:"
 
 msgid "System Updates"
-msgstr ""
+msgstr "System Updates"
 
 msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
-msgstr ""
+msgstr "System language applied successfully. You might need to restart your system for the changes to take full effect."
 
 msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
-msgstr ""
+msgstr "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
 
 msgid "Update System (Pacman)"
-msgstr ""
+msgstr "Update System (Pacman)"
 
 msgid "Update System (Yay)"
-msgstr ""
+msgstr "Update System (Yay)"
 
 msgid "Welcome"
-msgstr ""
+msgstr "Welcome"
 
 msgid "Welcome to Helwan Linux"
-msgstr ""
+msgstr "Welcome to Helwan Linux"
 
 msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
-msgstr ""
+msgstr "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
 
 msgid "Yay is not installed."
-msgstr ""
+msgstr "Yay is not installed."
 
 msgid "You are about to run the following commands with root privileges:\n\n"
-msgstr ""
+msgstr "You are about to run the following commands with root privileges:\n\n"
 
 msgid "\n\nAre you sure you want to continue?"
-msgstr ""
+msgstr "\n\nAre you sure you want to continue?"
 
 msgid "pkexec command not found. Ensure polkit is installed."
-msgstr ""
+msgstr "pkexec command not found. Ensure polkit is installed."
 
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
-msgstr ""
+msgstr "xfce4-terminal is not installed. Please install xfce4-terminal."
+
+msgid "Software Groups"
+msgstr "Software Groups"
+
+msgid "Software Groups Installer"
+msgstr "Software Groups Installer"
+
+msgid "Install Development Tools"
+msgstr "Install Development Tools"
+
+msgid "Install Programming Languages"
+msgstr "Install Programming Languages"
+
+msgid "Install Multimedia Suite"
+msgstr "Install Multimedia Suite"
+
+msgid "Install Internet Tools"
+msgstr "Install Internet Tools"
+
+msgid "Install Office Suite"
+msgstr "Install Office Suite"
+
+msgid "Install Gaming Tools"
+msgstr "Install Gaming Tools"
+
+msgid "Install Docker Tools"
+msgstr "Install Docker Tools"

@@ -173,5 +173,29 @@ msgstr "لم يتم العثور على الأمر pkexec. تأكد من تثب�
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
 msgstr "xfce4-terminal غير مثبت. يرجى تثبيت xfce4-terminal."
 
+msgid "Software Groups"
+msgstr "مثبت البرامج"
 
+msgid "Software Groups Installer"
+msgstr "تثبيت مجموعات البرامج"
 
+msgid "Install Development Tools"
+msgstr "تثبيت برامج التطوير"
+
+msgid "Install Programming Languages"
+msgstr "تثبيت لغات البرمجة"
+
+msgid "Install Multimedia Suite"
+msgstr "تثبيت برامج الوسائط"
+
+msgid "Install Internet Tools"
+msgstr "تثبيت برامج التواصل"
+
+msgid "Install Office Suite"
+msgstr "تثبيت الحزمة المكتبية"
+
+msgid "Install Gaming Tools"
+msgstr "تثبيت حزمة الالعاب"
+
+msgid "Install Docker Tools"
+msgstr "تثبيت حزمة الحاويات"

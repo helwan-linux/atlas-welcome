@@ -77,6 +77,7 @@ SYSTEM_LANGUAGES = languages = {
 	'sk_SK.UTF-8': 'Slovenčina (Slovensko)',       # السلوفاكية
 	'mt_MT.UTF-8': 'Malti (Malta)',                # المالطية
 	'sq_AL.UTF-8': 'Shqip (Shqipëri)',             # الألبانية
+	'mn_MN.UTF-8': 'Монгол (Монгол)',
 }
 
 
@@ -124,6 +125,7 @@ APP_LANGUAGES = languages = {
 	'sk_SK.UTF-8': 'Slovenčina (Slovensko)',       # السلوفاكية
 	'mt_MT.UTF-8': 'Malti (Malta)',                # المالطية
 	'sq_AL.UTF-8': 'Shqip (Shqipëri)',             # الألبانية
+	'mn_MN.UTF-8': 'Монгол (Монгол)',
 }
 
 
@@ -293,7 +295,7 @@ class WelcomeApp(QWidget):
 			if self.greeting:
 				self.greeting.setStyleSheet(
 					"font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #4d194d;")  # لون النص للسمة البنفسجية
-		elif theme_name == "Light Black (Faded)":
+		elif theme_name == "Light Black":
 			self.setStyleSheet("""
 				QWidget { background-color: #505050; font-family: 'Segoe UI'; font-size: 13px; color: #e0e0e0; } /* افتحنا الخلفية والنص */
 				QLabel { color: #e0e0e0; margin-bottom: 5px; }
@@ -316,6 +318,499 @@ class WelcomeApp(QWidget):
 			if self.greeting:
 				self.greeting.setStyleSheet(
 					"font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #e0e0e0;")  # لون النص للسمة السوداء الفاتحة)
+		elif theme_name == "Mint Green":
+			self.setStyleSheet("""
+				QWidget { background-color: #e0f7f1; font-family: 'Segoe UI'; font-size: 13px; color: #2e7d6d; }
+				QLabel { color: #2e7d6d; margin-bottom: 5px; }
+				QPushButton { background-color: #a8e6cf; color: #004d40; border: 1px solid #4db6ac; border-radius: 5px; padding: 6px 10px; margin-top: 3px; margin-bottom: 3px; font-size: 10px; }
+				QPushButton:hover { background-color: #81d4af; }
+				QCheckBox { color: #2e7d6d; margin-top: 5px; margin-bottom: 5px; }
+				QComboBox { background-color: #dcedc8; color: #2e7d6d; border: 1px solid #aed581; border-radius: 3px; padding: 4px; font-size: 10px; }
+				QGroupBox { border: 1px solid #a5d6a7; border-radius: 5px; margin-top: 10px; padding: 10px; color: #2e7d6d; }
+				QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 5px; color: #00796b; }
+				QLabel#disk_space_status { font-weight: bold; color: #004d40; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #2e7d6d; }
+				QTabWidget::pane { border: 1px solid #b2dfdb; background: #e0f7f1; color: #2e7d6d; }
+				QTabWidget::tab-bar QToolButton { background: #a8e6cf; color: #004d40; border: 1px solid #4db6ac; border-radius: 3px; padding: 4px 10px; margin: 2px; font-size: 10px; }
+				QTabWidget::tab-bar QToolButton:hover { background: #81d4af; }
+				QTabWidget::tab-bar QToolButton:selected { background: #4db6ac; font-weight: bold; }
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet("font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #2e7d6d;")
+				
+		elif theme_name == "Amber Sunset":
+			self.setStyleSheet("""
+				QWidget { background-color: #fff8e1; font-family: 'Segoe UI'; font-size: 13px; color: #e65100; }
+				QLabel { color: #e65100; margin-bottom: 5px; }
+				QPushButton { background-color: #ffd180; color: #bf360c; border: 1px solid #ffab40; border-radius: 5px; padding: 6px 10px; margin-top: 3px; margin-bottom: 3px; font-size: 10px; }
+				QPushButton:hover { background-color: #ffb74d; }
+				QCheckBox { color: #e65100; margin-top: 5px; margin-bottom: 5px; }
+				QComboBox { background-color: #ffe0b2; color: #e65100; border: 1px solid #ffcc80; border-radius: 3px; padding: 4px; font-size: 10px; }
+				QGroupBox { border: 1px solid #ffcc80; border-radius: 5px; margin-top: 10px; padding: 10px; color: #e65100; }
+				QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 5px; color: #ef6c00; }
+				QLabel#disk_space_status { font-weight: bold; color: #bf360c; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #e65100; }
+				QTabWidget::pane { border: 1px solid #ffe082; background: #fff8e1; color: #e65100; }
+				QTabWidget::tab-bar QToolButton { background: #ffd180; color: #bf360c; border: 1px solid #ffab40; border-radius: 3px; padding: 4px 10px; margin: 2px; font-size: 10px; }
+				QTabWidget::tab-bar QToolButton:hover { background: #ffb74d; }
+				QTabWidget::tab-bar QToolButton:selected { background: #ffab40; font-weight: bold; }
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet("font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #e65100;")
+				
+		elif theme_name == "Rose Pink":
+			self.setStyleSheet("""
+				QWidget { background-color: #ffe4e1; font-family: 'Segoe UI'; font-size: 13px; color: #880e4f; }
+				QLabel { color: #880e4f; margin-bottom: 5px; }
+				QPushButton { background-color: #f8bbd0; color: #880e4f; border: 1px solid #f48fb1; border-radius: 5px; padding: 6px 10px; margin-top: 3px; margin-bottom: 3px; font-size: 10px; }
+				QPushButton:hover { background-color: #f06292; }
+				QCheckBox { color: #880e4f; margin-top: 5px; margin-bottom: 5px; }
+				QComboBox { background-color: #fce4ec; color: #880e4f; border: 1px solid #f8bbd0; border-radius: 3px; padding: 4px; font-size: 10px; }
+				QGroupBox { border: 1px solid #f48fb1; border-radius: 5px; margin-top: 10px; padding: 10px; color: #880e4f; }
+				QGroupBox::title { subcontrol-origin: margin; left: 10px; padding: 0 5px; color: #ad1457; }
+				QLabel#disk_space_status { font-weight: bold; color: #880e4f; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #880e4f; }
+				QTabWidget::pane { border: 1px solid #f8bbd0; background: #ffe4e1; color: #880e4f; }
+				QTabWidget::tab-bar QToolButton { background: #f8bbd0; color: #880e4f; border: 1px solid #f48fb1; border-radius: 3px; padding: 4px 10px; margin: 2px; font-size: 10px; }
+				QTabWidget::tab-bar QToolButton:hover { background: #f06292; }
+				QTabWidget::tab-bar QToolButton:selected { background: #f48fb1; font-weight: bold; }
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet("font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #880e4f;")
+
+		elif theme_name == "Sunset Gradient":
+			self.setStyleSheet("""
+				QWidget {
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #ffd1dc, stop:1 #ffe4b5);
+					font-family: 'Segoe UI';
+					font-size: 13px;
+					color: #4b2e2e;
+				}
+				QLabel { color: #4b2e2e; margin-bottom: 5px; }
+				QPushButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffe4e1, stop:1 #ffb6b9);
+					color: #4b2e2e;
+					border: 1px solid #ffa07a;
+					border-radius: 5px;
+					padding: 6px 10px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QPushButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffb6b9, stop:1 #ffa07a);
+				}
+				QCheckBox {
+					color: #4b2e2e;
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+				QComboBox {
+					background-color: #fff0f5;
+					color: #4b2e2e;
+					border: 1px solid #ffa07a;
+					border-radius: 3px;
+					padding: 4px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QGroupBox {
+					border: 1px solid #ffa07a;
+					border-radius: 5px;
+					margin-top: 10px;
+					padding: 10px;
+					color: #4b2e2e;
+				}
+				QGroupBox::title {
+					subcontrol-origin: margin;
+					left: 10px;
+					padding: 0 5px;
+					color: #e65100;
+				}
+				QLabel#disk_space_status { font-weight: bold; color: #4b2e2e; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #4b2e2e; }
+				QTabWidget::pane {
+					border: 1px solid #ffa07a;
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #ffd1dc, stop:1 #fff8e1);
+					color: #4b2e2e;
+				}
+				QTabWidget::tab-bar QToolButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffe4e1, stop:1 #ffb6b9);
+					color: #4b2e2e;
+					border: 1px solid #ffa07a;
+					border-radius: 3px;
+					padding: 4px 10px;
+					margin: 2px;
+					font-size: 10px;
+				}
+				QTabWidget::tab-bar QToolButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #ffb6b9, stop:1 #ffa07a);
+				}
+				QTabWidget::tab-bar QToolButton:selected {
+					background: #ffa07a;
+					font-weight: bold;
+				}
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet(
+					"font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #4b2e2e;")
+
+		elif theme_name == "Ocean Gradient":
+			self.setStyleSheet("""
+				QWidget {
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #c2f0f7, stop:1 #81d4fa);
+					font-family: 'Segoe UI';
+					font-size: 13px;
+					color: #01579b;
+				}
+				QLabel { color: #01579b; margin-bottom: 5px; }
+				QPushButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e1f5fe, stop:1 #4fc3f7);
+					color: #01579b;
+					border: 1px solid #4fc3f7;
+					border-radius: 5px;
+					padding: 6px 10px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QPushButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4fc3f7, stop:1 #0288d1);
+				}
+				QCheckBox {
+					color: #01579b;
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+				QComboBox {
+					background-color: #bbdefb;
+					color: #01579b;
+					border: 1px solid #4fc3f7;
+					border-radius: 3px;
+					padding: 4px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QGroupBox {
+					border: 1px solid #4fc3f7;
+					border-radius: 5px;
+					margin-top: 10px;
+					padding: 10px;
+					color: #01579b;
+				}
+				QGroupBox::title {
+					subcontrol-origin: margin;
+					left: 10px;
+					padding: 0 5px;
+					color: #0288d1;
+				}
+				QLabel#disk_space_status { font-weight: bold; color: #01579b; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #01579b; }
+				QTabWidget::pane {
+					border: 1px solid #4fc3f7;
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #c2f0f7, stop:1 #bbdefb);
+					color: #01579b;
+				}
+				QTabWidget::tab-bar QToolButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #e1f5fe, stop:1 #4fc3f7);
+					color: #01579b;
+					border: 1px solid #4fc3f7;
+					border-radius: 3px;
+					padding: 4px 10px;
+					margin: 2px;
+					font-size: 10px;
+				}
+				QTabWidget::tab-bar QToolButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #4fc3f7, stop:1 #0288d1);
+				}
+				QTabWidget::tab-bar QToolButton:selected {
+					background: #0288d1;
+					font-weight: bold;
+				}
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet(
+					"font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #01579b;")
+
+		elif theme_name == "Night Sky":
+			self.setStyleSheet("""
+				QWidget {
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1a237e, stop:1 #0d47a1);
+					font-family: 'Segoe UI';
+					font-size: 13px;
+					color: #c5cae9;
+				}
+				QLabel { color: #c5cae9; margin-bottom: 5px; }
+				QPushButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3949ab, stop:1 #283593);
+					color: #c5cae9;
+					border: 1px solid #5c6bc0;
+					border-radius: 5px;
+					padding: 6px 10px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QPushButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5c6bc0, stop:1 #3949ab);
+				}
+				QCheckBox {
+					color: #c5cae9;
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+				QComboBox {
+					background-color: #303f9f;
+					color: #c5cae9;
+					border: 1px solid #5c6bc0;
+					border-radius: 3px;
+					padding: 4px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QGroupBox {
+					border: 1px solid #5c6bc0;
+					border-radius: 5px;
+					margin-top: 10px;
+					padding: 10px;
+					color: #c5cae9;
+				}
+				QGroupBox::title {
+					subcontrol-origin: margin;
+					left: 10px;
+					padding: 0 5px;
+					color: #7986cb;
+				}
+				QLabel#disk_space_status { font-weight: bold; color: #c5cae9; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #c5cae9; }
+				QTabWidget::pane {
+					border: 1px solid #5c6bc0;
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1a237e, stop:1 #283593);
+					color: #c5cae9;
+				}
+				QTabWidget::tab-bar QToolButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #3949ab, stop:1 #5c6bc0);
+					color: #c5cae9;
+					border: 1px solid #5c6bc0;
+					border-radius: 3px;
+					padding: 4px 10px;
+					margin: 2px;
+					font-size: 10px;
+				}
+				QTabWidget::tab-bar QToolButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #5c6bc0, stop:1 #3949ab);
+				}
+				QTabWidget::tab-bar QToolButton:selected {
+					background: #3949ab;
+					font-weight: bold;
+				}
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet(
+					"font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #c5cae9;")
+
+
+		elif theme_name == "Forest Breeze":
+			self.setStyleSheet("""
+				QWidget {
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #a5d6a7, stop:1 #388e3c);
+					font-family: 'Segoe UI';
+					font-size: 13px;
+					color: #1b5e20;
+				}
+				QLabel { color: #1b5e20; margin-bottom: 5px; }
+				QPushButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #c8e6c9, stop:1 #66bb6a);
+					color: #1b5e20;
+					border: 1px solid #66bb6a;
+					border-radius: 5px;
+					padding: 6px 10px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QPushButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #81c784, stop:1 #2e7d32);
+				}
+				QCheckBox {
+					color: #1b5e20;
+					margin-top: 5px;
+					margin-bottom: 5px;
+				}
+				QComboBox {
+					background-color: #a5d6a7;
+					color: #1b5e20;
+					border: 1px solid #66bb6a;
+					border-radius: 3px;
+					padding: 4px;
+					margin-top: 3px;
+					margin-bottom: 3px;
+					font-size: 10px;
+				}
+				QGroupBox {
+					border: 1px solid #66bb6a;
+					border-radius: 5px;
+					margin-top: 10px;
+					padding: 10px;
+					color: #1b5e20;
+				}
+				QGroupBox::title {
+					subcontrol-origin: margin;
+					left: 10px;
+					padding: 0 5px;
+					color: #2e7d32;
+				}
+				QLabel#disk_space_status { font-weight: bold; color: #1b5e20; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #1b5e20; }
+				QTabWidget::pane {
+					border: 1px solid #66bb6a;
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #a5d6a7, stop:1 #81c784);
+					color: #1b5e20;
+				}
+				QTabWidget::tab-bar QToolButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #c8e6c9, stop:1 #66bb6a);
+					color: #1b5e20;
+					border: 1px solid #66bb6a;
+					border-radius: 3px;
+					padding: 4px 10px;
+					margin: 2px;
+					font-size: 10px;
+				}
+				QTabWidget::tab-bar QToolButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #81c784, stop:1 #2e7d32);
+				}
+				QTabWidget::tab-bar QToolButton:selected {
+					background: #2e7d32;
+					font-weight: bold;
+				}
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet(
+					"font-size: 15px; margin-top: 10px; margin-bottom: 15px; color: #1b5e20;")
+
+		elif theme_name == "Halwan":
+			self.setStyleSheet("""
+				QWidget {
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+						stop:0 #e0c3fc, stop:1 #8ec5fc);  /* خليط بين البنفسجي السماوي والأزرق الهادئ */
+					font-family: 'Segoe UI';
+					font-size: 13px;
+					color: #3a1768;  /* بنفسجي غامق للنص */
+				}
+				QLabel {
+					color: #3a1768;
+					margin-bottom: 5px;
+				}
+				QPushButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+						stop:0 #fceabb, stop:1 #f8b500); /* ألوان دافئة صفراء/ذهبية */
+					color: #4a2c67;
+					border: 1px solid #d9a520;
+					border-radius: 6px;
+					padding: 6px 12px;
+					margin-top: 4px;
+					margin-bottom: 4px;
+					font-size: 11px;
+					font-weight: 600;
+				}
+				QPushButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+						stop:0 #f8b500, stop:1 #d18e00);
+					color: #fff;
+				}
+				QCheckBox {
+					color: #3a1768;
+					margin-top: 6px;
+					margin-bottom: 6px;
+				}
+				QComboBox {
+					background: #c9b2ff; /* بنفسجي فاتح */
+					color: #3a1768;
+					border: 1px solid #7a42c1;
+					border-radius: 4px;
+					padding: 5px;
+					margin-top: 4px;
+					margin-bottom: 4px;
+					font-size: 11px;
+				}
+				QGroupBox {
+					border: 2px solid #7a42c1;
+					border-radius: 7px;
+					margin-top: 12px;
+					padding: 12px;
+					color: #3a1768;
+					background: rgba(255, 255, 255, 0.15); /* شفافية خفيفة */
+				}
+				QGroupBox::title {
+					subcontrol-origin: margin;
+					left: 10px;
+					padding: 0 6px;
+					color: #d18e00; /* ذهبي للنص */
+					font-weight: bold;
+					font-size: 13px;
+				}
+				QLabel#disk_space_status { font-weight: bold; color: #3a1768; }
+				QLabel#disk_space_status_ok { color: darkgreen; }
+				QLabel#disk_space_status_warning { color: darkorange; }
+				QLabel#disk_space_status_error { color: darkred; }
+				QLabel#system_info { margin-bottom: 2px; color: #3a1768; }
+				QTabWidget::pane {
+					border: 1px solid #7a42c1;
+					background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+						stop:0 #d8b4fe, stop:1 #a29bfe);
+					color: #3a1768;
+				}
+				QTabWidget::tab-bar QToolButton {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+						stop:0 #fceabb, stop:1 #f8b500);
+					color: #4a2c67;
+					border: 1px solid #d9a520;
+					border-radius: 4px;
+					padding: 5px 14px;
+					margin: 3px;
+					font-size: 11px;
+					font-weight: 600;
+				}
+				QTabWidget::tab-bar QToolButton:hover {
+					background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+						stop:0 #f8b500, stop:1 #d18e00);
+					color: #fff;
+				}
+				QTabWidget::tab-bar QToolButton:selected {
+					background: #d18e00;
+					font-weight: bold;
+					color: #fff;
+				}
+			""")
+			if self.greeting:
+				self.greeting.setStyleSheet(
+					"font-size: 16px; margin-top: 12px; margin-bottom: 16px; color: #3a1768; font-weight: bold;")
+
+
 
 	def load_logo(self):
 		logo_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sources", "logo.png")
@@ -330,16 +825,18 @@ class WelcomeApp(QWidget):
 		main_layout = QVBoxLayout(self)
 		self.tabs = QTabWidget()
 
-		self.tabs.addTab(self.create_main_tab(), self.tr("Welcome"))
-		self.tabs.addTab(self.create_cleaner_tab(), self.tr("System Cleaner"))
-		self.tabs.addTab(self.create_software_groups_tab(), self.tr("Software Groups"))  # تبويب جديد
+		# تم تغيير self.tr() إلى _() هنا
+		self.tabs.addTab(self.create_main_tab(), _("Welcome"))
+		self.tabs.addTab(self.create_cleaner_tab(), _("System Cleaner"))
+		# تم تغيير self.tr() إلى _() هنا
+		self.tabs.addTab(self.create_software_groups_tab(), _("Software Groups"))  # تبويب جديد
 
 		main_layout.addWidget(self.tabs)
 
 		self.setLayout(main_layout)
-		self.setWindowTitle(self.tr("Welcome to Helwan Linux"))
+		# تم تغيير self.tr() إلى _() هنا
+		self.setWindowTitle(_("Welcome to Helwan Linux"))
 		self.setGeometry(100, 100, 600, 400)
-
 
 	# دالة لإنشاء تبويب منظف المزامنة (لسه هنضيف جواه عناصر واجهة المستخدم)
 	def create_sync_cleaner_tab(self):
@@ -404,7 +901,7 @@ class WelcomeApp(QWidget):
 		self.theme_label = QLabel(_("Application Theme:"))
 		theme_layout.addWidget(self.theme_label)
 		self.theme_combobox = QComboBox()
-		self.theme_combobox.addItems(["Default", "Sky Blue", "Light Black", "Light Purple"])
+		self.theme_combobox.addItems(["Default", "Sky Blue", "Light Black", "Light Purple","Mint Green","Amber Sunset","Rose Pink","Sunset Gradient","Ocean Gradient","Night Sky","Forest Breeze","Halwan"])
 		self.theme_combobox.setCurrentText(self.current_theme)
 		self.theme_combobox.currentTextChanged.connect(self.save_theme)
 		self.theme_combobox.setStyleSheet("font-size: 10px; padding: 1px;")
@@ -529,55 +1026,65 @@ class WelcomeApp(QWidget):
 		software_tab_layout = QVBoxLayout(self.software_tab)
 		software_tab_layout.setAlignment(Qt.AlignTop)
 
-		group_box = QGroupBox(_("Software Groups Installer"))
+		# تم تغيير self.tr() إلى _() هنا
+		self.group_box = QGroupBox(_("Software Groups Installer"))
+		self.group_box.setObjectName("Software Groups Installer") # إضافة اسم الكائن لتسهيل التحديث في retranslate_ui
 		layout = QVBoxLayout()
+		self.group_box.setLayout(layout)
 
-		# Development Tools
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		dev_btn = self.create_button(_("Install Development Tools"),
-									 lambda: self.run_terminal_cmd
-									 ("sudo pacman -S --needed base-devel git cmake geany code meld python-pyqt5 qtcreator qt5-tools dbeaver"))
+									 lambda: self.run_terminal_cmd(
+										 "sudo pacman -S --needed base-devel git cmake geany code meld python-pyqt5 qtcreator qt5-tools dbeaver"))
+		dev_btn.setObjectName("dev_tools_button")
 		layout.addWidget(dev_btn)
-		
+
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		prog_btn = self.create_button(_("Install Programming Languages"),
-									 lambda: self.run_terminal_cmd
-									 ("sudo pacman -S --needed rust lua php nodejs go sqlite mariadb"))
+									 lambda: self.run_terminal_cmd(
+										 "sudo pacman -S --needed rust lua php nodejs go sqlite mariadb"))
+		prog_btn.setObjectName("prog_lang_button")
 		layout.addWidget(prog_btn)
 
-		# Multimedia
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		multimedia_btn = self.create_button(_("Install Multimedia Suite"),
-											lambda: self.run_terminal_cmd
-											("sudo pacman -S --needed vlc gimp audacity shotcut audacious vokoscreen handbrake"))
+										   lambda: self.run_terminal_cmd(
+											   "sudo pacman -S --needed vlc gimp audacity shotcut audacious vokoscreen handbrake"))
+		multimedia_btn.setObjectName("multimedia_suite_button")
 		layout.addWidget(multimedia_btn)
 
-		# Internet Tools
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		internet_btn = self.create_button(_("Install Internet Tools"),
-										  lambda: self.run_terminal_cmd
-										  ("sudo pacman -S --needed firefox kdeconnect thunderbird"))
+										 lambda: self.run_terminal_cmd(
+											 "sudo pacman -S --needed firefox kdeconnect thunderbird"))
+		internet_btn.setObjectName("internet_tools_button")
 		layout.addWidget(internet_btn)
 
-		# Office Suite
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		office_btn = self.create_button(_("Install Office Suite"),
-										lambda: self.run_terminal_cmd("sudo pacman -S --needed libreoffice-fresh hunspell-en_US"))
+									   lambda: self.run_terminal_cmd(
+										   "sudo pacman -S --needed libreoffice-fresh hunspell-en_US"))
+		office_btn.setObjectName("office_suite_button")
 		layout.addWidget(office_btn)
 
-		# Extra: Gaming Tools
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		gaming_btn = self.create_button(_("Install Gaming Tools"),
-										lambda: self.run_terminal_cmd
-										("sudo pacman -S --needed steam lutris cuyo artikulate blurble openra vkd3d gamemode mangohud"))
+									   lambda: self.run_terminal_cmd(
+										   "sudo pacman -S --needed steam lutris cuyo artikulate blurble openra vkd3d gamemode mangohud"))
+		gaming_btn.setObjectName("gaming_tools_button")
 		layout.addWidget(gaming_btn)
-		
-		# Extra: Docker Tools
+
+		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		docker_btn = self.create_button(_("Install Docker Tools"),
-										lambda: self.run_terminal_cmd
-										("sudo pacman -S --needed docker docker-compose lazydocker"))
+									   lambda: self.run_terminal_cmd(
+										   "sudo pacman -S --needed docker docker-compose lazydocker"))
+		docker_btn.setObjectName("docker_tools_button")
 		layout.addWidget(docker_btn)
 
-		group_box.setLayout(layout)
-		software_tab_layout.addWidget(group_box)
+		software_tab_layout.addWidget(self.group_box)
 		software_tab_layout.addStretch(1)
 
 		return self.software_tab
-
 
 	def run_pacman_cleanup(self):
 		commands = []
@@ -633,7 +1140,7 @@ class WelcomeApp(QWidget):
 		if on_change:
 			combo.currentTextChanged.connect(on_change)
 		# تصغير حجم خط القائمة المنسدلة وتعديل الحشو
-		combo.setStyleSheet("font-size: 10px; padding: 4px;")
+		combo.setStyleSheet("font-size: 10px; padding: 4px 8px;")  # تقليل حجم الخط والحشو
 		setattr(self, label_attr, label)
 		setattr(self, combo_attr, combo)
 		layout.addWidget(label)
@@ -723,15 +1230,35 @@ class WelcomeApp(QWidget):
 		else:
 			QMessageBox.critical(self, _("Error"), _("Invalid system language selected."))
 	
+
 	def activate_locale_manually(self, lang_code):
 		locale_gen_path = "/etc/locale.gen"
 		locale_default_path = "/etc/default/locale"
 		locale_line = f"{lang_code}.UTF-8 UTF-8"
 
 		try:
-			# اقرأ محتوى locale.gen
-			with open(locale_gen_path, "r") as f:
-				lines = f.readlines()
+			# 1. قراءة وتعديل ملف locale.gen
+			# يجب أن يتم ذلك بصلاحيات الجذر
+			# لا يمكننا فتح الملف مباشرة للكتابة/القراءة بـ sudo في Python
+			# لذلك سنقوم بقراءة المحتوى أولاً، ثم تعديله، ثم إعادة كتابته
+			# ولكن بما أن القراءة والكتابة تتطلب صلاحيات، سنقوم بتنفيذ الأمر كـ sudo
+
+			# قراءة محتوى locale.gen باستخدام cat و sudo
+			# لا توجد طريقة مباشرة "آمنة" لفتح ملف بصلاحيات sudo في بايثون للقراءة والكتابة
+			# الطريقة الأكثر أمانًا هي استخدام subprocess.run مع sudo لإنشاء ملف مؤقت
+			# أو تعديل الملف مباشرة
+			
+			# الطريقة الأفضل هي قراءة الملف، تعديل السطر، ثم كتابة الملف الجديد
+			# باستخدام subprocess مع صلاحيات sudo.
+			
+			# قراءة المحتوى الحالي لـ /etc/locale.gen
+			# نستخدم 'sudo cat' لضمان القدرة على قراءة الملف
+			try:
+				result = subprocess.run(["sudo", "cat", locale_gen_path], capture_output=True, text=True, check=True)
+				lines = result.stdout.splitlines()
+			except subprocess.CalledProcessError as e:
+				return False, f"Failed to read {locale_gen_path} with sudo: {e}"
+
 
 			# تحقق إذا السطر موجود مع أو بدون #
 			line_exists = False
@@ -745,18 +1272,56 @@ class WelcomeApp(QWidget):
 
 			# لو السطر مش موجود خالص، ضيفه
 			if not line_exists:
-				lines.append(locale_line + "\n")
+				lines.append(locale_line) # لا حاجة لـ '\n' هنا، joinlines ستضيفه
 
-			# اكتب التعديلات في الملف
-			with open(locale_gen_path, "w") as f:
-				f.writelines(lines)
+			# 2. كتابة التعديلات إلى locale.gen باستخدام صلاحيات الجذر
+			# نستخدم أمر 'echo' أو 'tee' مع 'sudo' للكتابة إلى الملف
+			# أو يمكننا كتابة المحتوى في ملف مؤقت ثم نقله باستخدام sudo mv
+			# الطريقة الأكثر شيوعًا هي تمرير المحتوى لـ 'tee' عبر stdin
+			
+			new_content = "\n".join(lines) + "\n" # أعد بناء المحتوى مع أسطر جديدة
 
-			# شغل locale-gen عشان يولد اللغات
-			subprocess.check_call(["locale-gen"])
+			try:
+				# نستخدم 'tee' لكتابة المحتوى إلى الملف بصلاحيات sudo
+				# 'tee -a' للإلحاق، لكننا نريد الكتابة فوق المحتوى الحالي
+				# 'tee' بدون -a سيكتب فوق المحتوى
+				process = subprocess.run(
+					["sudo", "tee", locale_gen_path],
+					input=new_content.encode('utf-8'), # يجب أن يكون input bytes
+					check=True,
+					capture_output=True
+				)
+				if process.stderr:
+					print(f"Stderr from tee: {process.stderr.decode('utf-8')}") # لغرض التصحيح
+			except subprocess.CalledProcessError as e:
+				return False, f"Failed to write to {locale_gen_path} with sudo: {e.stderr.decode('utf-8')}"
 
-			# اكتب اللغة الافتراضية في /etc/default/locale
-			with open(locale_default_path, "w") as f:
-				f.write(f'LANG="{lang_code}.UTF-8"\n')
+
+			# 3. تشغيل locale-gen عشان يولد اللغات
+			# هذا الأمر يتطلب صلاحيات الجذر بشكل مباشر
+			try:
+				subprocess.check_call(["sudo", "locale-gen"])
+			except subprocess.CalledProcessError as e:
+				return False, f"Failed to run 'sudo locale-gen': {e.stderr.decode('utf-8')}"
+			except FileNotFoundError:
+				return False, "Error: 'sudo' command not found. Make sure sudo is installed and in your PATH."
+
+
+			# 4. كتابة اللغة الافتراضية في /etc/default/locale
+			# هذا أيضًا يتطلب صلاحيات الجذر
+			locale_default_content = f'LANG="{lang_code}.UTF-8"\n'
+			try:
+				process = subprocess.run(
+					["sudo", "tee", locale_default_path],
+					input=locale_default_content.encode('utf-8'),
+					check=True,
+					capture_output=True
+				)
+				if process.stderr:
+					print(f"Stderr from tee for default locale: {process.stderr.decode('utf-8')}") # لغرض التصحيح
+			except subprocess.CalledProcessError as e:
+				return False, f"Failed to write to {locale_default_path} with sudo: {e.stderr.decode('utf-8')}"
+
 
 			return True, None
 
@@ -837,8 +1402,11 @@ class WelcomeApp(QWidget):
 		self.setWindowTitle(_("Welcome to Helwan Linux"))
 		self.tabs.setTabText(0, _("Welcome"))
 		self.tabs.setTabText(1, _("System Cleaner"))
-		# if self.tabs.count() > 2:
-		#     self.tabs.setTabText(2, _("Sync Cleaner")) # لو ضفنا تبويب منظف المزامنة
+		
+		# تحديث عنوان تبويب مجموعات البرامج
+		if self.tabs.count() > 2: # تأكد أن التبويب موجود
+			self.tabs.setTabText(2, _("Software Groups"))
+
 		if self.app_lang_label:
 			self.app_lang_label.setText(_("Application Language:"))
 		if self.startup_check:
@@ -879,6 +1447,7 @@ class WelcomeApp(QWidget):
 			self.theme_label.setText(_("Application Theme:"))
 		self.greeting.setText(
 			_("Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"))
+		
 		cleaner_group = self.findChild(QGroupBox, "Pacman Cleaner")
 		if cleaner_group:
 			cleaner_group.setTitle(_("Pacman Cleaner"))
@@ -899,6 +1468,40 @@ class WelcomeApp(QWidget):
 			run_cleanup_button = self.findChild(QPushButton, "run_pacman_cleanup_button")
 			if run_cleanup_button:
 				run_cleanup_button.setText(_("Run Pacman Cleanup"))
+
+		# تحديث عناصر تبويب مجموعات البرامج
+		software_group_box = self.findChild(QGroupBox, "Software Groups Installer")
+		if software_group_box:
+			software_group_box.setTitle(_("Software Groups Installer"))
+
+			# تحديث أزرار تبويب مجموعات البرامج
+			dev_btn = self.findChild(QPushButton, "dev_tools_button")
+			if dev_btn:
+				dev_btn.setText(_("Install Development Tools"))
+
+			prog_btn = self.findChild(QPushButton, "prog_lang_button")
+			if prog_btn:
+				prog_btn.setText(_("Install Programming Languages"))
+
+			multimedia_btn = self.findChild(QPushButton, "multimedia_suite_button")
+			if multimedia_btn:
+				multimedia_btn.setText(_("Install Multimedia Suite"))
+
+			internet_btn = self.findChild(QPushButton, "internet_tools_button")
+			if internet_btn:
+				internet_btn.setText(_("Install Internet Tools"))
+
+			office_btn = self.findChild(QPushButton, "office_suite_button")
+			if office_btn:
+				office_btn.setText(_("Install Office Suite"))
+
+			gaming_btn = self.findChild(QPushButton, "gaming_tools_button")
+			if gaming_btn:
+				gaming_btn.setText(_("Install Gaming Tools"))
+
+			docker_btn = self.findChild(QPushButton, "docker_tools_button")
+			if docker_btn:
+				docker_btn.setText(_("Install Docker Tools"))
 
 
 if __name__ == '__main__':

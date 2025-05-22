@@ -21,7 +21,7 @@ msgid "Apply System Language"
 msgstr "Aplică limba sistemului"
 
 msgid "Available Disk Space:"
-msgstr "Spațiu disc disponibil:"
+msgstr "Spațiu disponibil pe disc:"
 
 msgid "Clean Old Packages (Keep Last 2 Versions)"
 msgstr "Curăță pachetele vechi (păstrează ultimele 2 versiuni)"
@@ -39,7 +39,7 @@ msgid "Error"
 msgstr "Eroare"
 
 msgid "Failed to apply system language:"
-msgstr "Nu s-a reușit aplicarea limbii sistemului:"
+msgstr "Aplicarea limbii sistemului a eșuat:"
 
 msgid "Free"
 msgstr "Liber"
@@ -63,7 +63,7 @@ msgid "N/A"
 msgstr "N/A"
 
 msgid "No Pacman cleanup options selected."
-msgstr "Nu au fost selectate opțiuni de curățare Pacman."
+msgstr "Nicio opțiune de curățare Pacman selectată."
 
 msgid "Open Documentation"
 msgstr "Deschide documentația"
@@ -108,22 +108,22 @@ msgid "Running Pacman Cleanup"
 msgstr "Se rulează curățarea Pacman"
 
 msgid "Show System Info Details"
-msgstr "Arată detaliile informațiilor sistemului"
+msgstr "Afișează detalii informații sistem"
 
 msgid "Show on startup"
-msgstr "Arată la pornire"
+msgstr "Afișează la pornire"
 
 msgid "Success"
 msgstr "Succes"
 
 msgid "Sync Cleaner"
-msgstr "Curățător sincronizare"
+msgstr "Curățător de sincronizare"
 
 msgid "Sync folder removal initiated."
-msgstr "Începută eliminarea folderului de sincronizare."
+msgstr "Inițiată eliminarea folderului de sincronizare."
 
 msgid "System Cleaner"
-msgstr "Curățător sistem"
+msgstr "Curățător de sistem"
 
 msgid "System Information"
 msgstr "Informații sistem"
@@ -135,13 +135,13 @@ msgid "System Language:"
 msgstr "Limba sistemului:"
 
 msgid "System Updates"
-msgstr "Actualizări sistem"
+msgstr "Actualizări de sistem"
 
-msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
-msgstr "Limba sistemului a fost aplicată cu succes. Este posibil să fie necesară repornirea sistemului pentru ca modificările să aibă efect complet."
+msgid "Limba sistemului a fost aplicată cu succes. S-ar putea să fie nevoie să reporniți sistemul pentru ca modificările să aibă efect complet."
+msgstr "Limba sistemului a fost aplicată cu succes. S-ar putea să fie nevoie să reporniți sistemul pentru ca modificările să aibă efect complet."
 
 msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
-msgstr "Această acțiune necesită privilegii de administrator pentru a elimina folderul de sincronizare. Vi se poate solicita parola."
+msgstr "Această acțiune necesită privilegii de administrator pentru a elimina folderul de sincronizare. S-ar putea să vi se ceară parola."
 
 msgid "Update System (Pacman)"
 msgstr "Actualizează sistemul (Pacman)"
@@ -156,19 +156,46 @@ msgid "Welcome to Helwan Linux"
 msgstr "Bun venit la Helwan Linux"
 
 msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
-msgstr "Bun venit în lumea Helwan Linux! ❤️\nSuntem aici pentru a vă ajuta să vă construiți visele pe cea mai puternică fundație!"
+msgstr "Bun venit în lumea Helwan Linux! ❤️\nSuntem aici pentru a te ajuta să-ți construiești visele pe cea mai puternică fundație!"
 
 msgid "Yay is not installed."
 msgstr "Yay nu este instalat."
 
 msgid "You are about to run the following commands with root privileges:\n\n"
-msgstr "Sunteți pe cale să rulați următoarele comenzi cu privilegii root:\n\n"
+msgstr "Sunteți pe cale să rulați următoarele comenzi cu privilegii de root:\n\n"
 
 msgid "\n\nAre you sure you want to continue?"
-msgstr "\n\nSigur doriți să continuați?"
+msgstr "\n\nSunteți sigur că doriți să continuați?"
 
 msgid "pkexec command not found. Ensure polkit is installed."
 msgstr "Comanda pkexec nu a fost găsită. Asigurați-vă că polkit este instalat."
 
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
 msgstr "xfce4-terminal nu este instalat. Vă rugăm să instalați xfce4-terminal."
+
+msgid "Software Groups"
+msgstr "Grupuri de software"
+
+msgid "Software Groups Installer"
+msgstr "Instalator grupuri de software"
+
+msgid "Install Development Tools"
+msgstr "Instalează instrumente de dezvoltare"
+
+msgid "Install Programming Languages"
+msgstr "Instalează limbaje de programare"
+
+msgid "Install Multimedia Suite"
+msgstr "Instalează suită multimedia"
+
+msgid "Install Internet Tools"
+msgstr "Instalează instrumente de internet"
+
+msgid "Install Office Suite"
+msgstr "Instalează suită Office"
+
+msgid "Install Gaming Tools"
+msgstr "Instalează instrumente de jocuri"
+
+msgid "Install Docker Tools"
+msgstr "Instalează instrumente Docker"

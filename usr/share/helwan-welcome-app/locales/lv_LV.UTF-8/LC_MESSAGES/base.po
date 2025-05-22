@@ -6,16 +6,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "An error occurred while applying system language:"
-msgstr "Radās kļūda, iestatot sistēmas valodu:"
+msgstr "Radās kļūda, lietojot sistēmas valodu:"
 
 msgid "Application Language:"
-msgstr "Lietotnes valoda:"
+msgstr "Lietojumprogrammas valoda:"
 
 msgid "Application Theme:"
-msgstr "Lietotnes motīvs:"
+msgstr "Lietojumprogrammas tēma:"
 
 msgid "Application language has been changed. Some changes may require an application restart."
-msgstr "Lietotnes valoda ir mainīta. Dažām izmaiņām var būt nepieciešama lietotnes pārstartēšana."
+msgstr "Lietojumprogrammas valoda ir mainīta. Dažām izmaiņām var būt nepieciešama lietojumprogrammas restartēšana."
 
 msgid "Apply System Language"
 msgstr "Lietot sistēmas valodu"
@@ -24,10 +24,10 @@ msgid "Available Disk Space:"
 msgstr "Pieejamā diska vieta:"
 
 msgid "Clean Old Packages (Keep Last 2 Versions)"
-msgstr "Notīrīt vecos pakotnes (saglabāt pēdējās 2 versijas)"
+msgstr "Tīrīt vecos iepakojumus (saglabāt pēdējās 2 versijas)"
 
 msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
-msgstr "Notīrīt Pacman kešatmiņu (pilnībā) - Brīdinājums! Tiks dzēstas visas lejupielādētās pakotnes."
+msgstr "Tīrīt Pacman kešatmiņu (pilnībā) - Brīdinājums! Tas noņems visus lejupielādētos iepakojumus."
 
 msgid "Cleanup Done"
 msgstr "Tīrīšana pabeigta"
@@ -60,10 +60,10 @@ msgid "Language Changed"
 msgstr "Valoda mainīta"
 
 msgid "N/A"
-msgstr "N/P"
+msgstr "Nav pieejams"
 
 msgid "No Pacman cleanup options selected."
-msgstr "Nav izvēlētas Pacman tīrīšanas opcijas."
+msgstr "Nav atlasītas Pacman tīrīšanas opcijas."
 
 msgid "Open Documentation"
 msgstr "Atvērt dokumentāciju"
@@ -87,13 +87,13 @@ msgid "RAM:"
 msgstr "RAM:"
 
 msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
-msgstr "Noņemt bāreņu pakotnes — pakotnes, kuras neviena cita instalētā pakotne vairs neprasa."
+msgstr "Noņemt bāreņu paketes - Paketes, kas vairs nav nepieciešamas nevienai instalētai paketei."
 
 msgid "Remove Sync Folders"
 msgstr "Noņemt sinhronizācijas mapes"
 
 msgid "Remove Uninstalled Packages from Cache"
-msgstr "Noņemt no kešatmiņas neinstalētās pakotnes"
+msgstr "Noņemt neatinstalētās paketes no kešatmiņas"
 
 msgid "Removing Sync Folder"
 msgstr "Tiek noņemta sinhronizācijas mape"
@@ -102,13 +102,13 @@ msgid "Run Pacman Cleanup"
 msgstr "Palaist Pacman tīrīšanu"
 
 msgid "Running Command"
-msgstr "Izpilda komandu"
+msgstr "Komanda tiek izpildīta"
 
 msgid "Running Pacman Cleanup"
-msgstr "Tiek veikta Pacman tīrīšana"
+msgstr "Tiek palaista Pacman tīrīšana"
 
 msgid "Show System Info Details"
-msgstr "Rādīt detalizētu sistēmas informāciju"
+msgstr "Rādīt sistēmas informācijas detaļas"
 
 msgid "Show on startup"
 msgstr "Rādīt startēšanas laikā"
@@ -120,7 +120,7 @@ msgid "Sync Cleaner"
 msgstr "Sinhronizācijas tīrītājs"
 
 msgid "Sync folder removal initiated."
-msgstr "Sinhronizācijas mapes noņemšana sākta."
+msgstr "Sinhronizācijas mapes noņemšana ir uzsākta."
 
 msgid "System Cleaner"
 msgstr "Sistēmas tīrītājs"
@@ -138,10 +138,10 @@ msgid "System Updates"
 msgstr "Sistēmas atjauninājumi"
 
 msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
-msgstr "Sistēmas valoda veiksmīgi iestatīta. Lai izmaiņas pilnībā stātos spēkā, iespējams, būs jāpārstartē sistēma."
+msgstr "Sistēmas valoda veiksmīgi lietota. Iespējams, jums būs jārestartē sistēma, lai izmaiņas stātos spēkā pilnībā."
 
 msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
-msgstr "Šī darbība prasa administratora tiesības, lai noņemtu sinhronizācijas mapi. Jums var tikt pieprasīta parole."
+msgstr "Šai darbībai ir nepieciešamas administratora tiesības, lai noņemtu sinhronizācijas mapi. Jums var tikt lūgta parole."
 
 msgid "Update System (Pacman)"
 msgstr "Atjaunināt sistēmu (Pacman)"
@@ -156,7 +156,7 @@ msgid "Welcome to Helwan Linux"
 msgstr "Laipni lūdzam Helwan Linux"
 
 msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
-msgstr "Laipni lūdzam Helwan Linux pasaulē! ❤️\nMēs esam šeit, lai palīdzētu tev veidot savus sapņus uz visstiprākajiem pamatiem!"
+msgstr "Laipni lūdzam Helwan Linux pasaulē! ❤️\nMēs esam šeit, lai palīdzētu jums veidot jūsu sapņus uz spēcīgākā pamata!"
 
 msgid "Yay is not installed."
 msgstr "Yay nav instalēts."
@@ -168,7 +168,34 @@ msgid "\n\nAre you sure you want to continue?"
 msgstr "\n\nVai esat pārliecināts, ka vēlaties turpināt?"
 
 msgid "pkexec command not found. Ensure polkit is installed."
-msgstr "Komanda pkexec nav atrasta. Pārliecinieties, ka ir instalēts polkit."
+msgstr "pkexec komanda nav atrasta. Pārliecinieties, ka polkit ir instalēts."
 
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
 msgstr "xfce4-terminal nav instalēts. Lūdzu, instalējiet xfce4-terminal."
+
+msgid "Software Groups"
+msgstr "Programmatūras grupas"
+
+msgid "Software Groups Installer"
+msgstr "Programmatūras grupu instalētājs"
+
+msgid "Install Development Tools"
+msgstr "Instalēt izstrādes rīkus"
+
+msgid "Install Programming Languages"
+msgstr "Instalēt programmēšanas valodas"
+
+msgid "Install Multimedia Suite"
+msgstr "Instalēt multivides komplektu"
+
+msgid "Install Internet Tools"
+msgstr "Instalēt interneta rīkus"
+
+msgid "Install Office Suite"
+msgstr "Instalēt biroja komplektu"
+
+msgid "Install Gaming Tools"
+msgstr "Instalēt spēļu rīkus"
+
+msgid "Install Docker Tools"
+msgstr "Instalēt Docker rīkus"

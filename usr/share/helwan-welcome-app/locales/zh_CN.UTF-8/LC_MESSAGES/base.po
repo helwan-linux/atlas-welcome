@@ -24,7 +24,7 @@ msgid "Available Disk Space:"
 msgstr "可用磁盘空间："
 
 msgid "Clean Old Packages (Keep Last 2 Versions)"
-msgstr "清理旧软件包（保留最近 2 个版本）"
+msgstr "清理旧软件包（保留最后 2 个版本）"
 
 msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
 msgstr "清理 Pacman 缓存（完整） - 警告！这将删除所有已下载的软件包。"
@@ -60,10 +60,10 @@ msgid "Language Changed"
 msgstr "语言已更改"
 
 msgid "N/A"
-msgstr "N/A"
+msgstr "不适用"
 
 msgid "No Pacman cleanup options selected."
-msgstr "未选择任何 Pacman 清理选项。"
+msgstr "未选择 Pacman 清理选项。"
 
 msgid "Open Documentation"
 msgstr "打开文档"
@@ -87,13 +87,13 @@ msgid "RAM:"
 msgstr "内存："
 
 msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
-msgstr "删除孤立软件包 - 任何已安装软件包不再需要的软件包。"
+msgstr "删除孤立软件包 - 不再被任何已安装软件包所需的软件包。"
 
 msgid "Remove Sync Folders"
 msgstr "删除同步文件夹"
 
 msgid "Remove Uninstalled Packages from Cache"
-msgstr "从缓存中删除未安装的软件包"
+msgstr "从缓存中删除已卸载的软件包"
 
 msgid "Removing Sync Folder"
 msgstr "正在删除同步文件夹"
@@ -156,7 +156,7 @@ msgid "Welcome to Helwan Linux"
 msgstr "欢迎来到 Helwan Linux"
 
 msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
-msgstr "欢迎来到 Helwan Linux 的世界！❤️\n我们在此帮助您在最坚实的基础上构建您的梦想！"
+msgstr "欢迎来到 Helwan Linux 的世界！❤️\n我们在这里帮助您在最坚实的基础上实现您的梦想！"
 
 msgid "Yay is not installed."
 msgstr "Yay 未安装。"
@@ -172,3 +172,30 @@ msgstr "未找到 pkexec 命令。请确保已安装 polkit。"
 
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
 msgstr "xfce4-terminal 未安装。请安装 xfce4-terminal。"
+
+msgid "Software Groups"
+msgstr "软件组"
+
+msgid "Software Groups Installer"
+msgstr "软件组安装程序"
+
+msgid "Install Development Tools"
+msgstr "安装开发工具"
+
+msgid "Install Programming Languages"
+msgstr "安装编程语言"
+
+msgid "Install Multimedia Suite"
+msgstr "安装多媒体套件"
+
+msgid "Install Internet Tools"
+msgstr "安装互联网工具"
+
+msgid "Install Office Suite"
+msgstr "安装办公套件"
+
+msgid "Install Gaming Tools"
+msgstr "安装游戏工具"
+
+msgid "Install Docker Tools"
+msgstr "安装 Docker 工具"

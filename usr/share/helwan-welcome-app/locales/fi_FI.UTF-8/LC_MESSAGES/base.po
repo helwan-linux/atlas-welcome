@@ -6,7 +6,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "An error occurred while applying system language:"
-msgstr "Järjestelmän kielen käyttöönotossa tapahtui virhe:"
+msgstr "Järjestelmäkielen asettamisessa tapahtui virhe:"
 
 msgid "Application Language:"
 msgstr "Sovelluksen kieli:"
@@ -18,16 +18,16 @@ msgid "Application language has been changed. Some changes may require an applic
 msgstr "Sovelluksen kieli on vaihdettu. Jotkut muutokset saattavat vaatia sovelluksen uudelleenkäynnistyksen."
 
 msgid "Apply System Language"
-msgstr "Käytä järjestelmän kieltä"
+msgstr "Ota järjestelmäkieli käyttöön"
 
 msgid "Available Disk Space:"
-msgstr "Vapaa levytila:"
+msgstr "Käytettävissä oleva levytila:"
 
 msgid "Clean Old Packages (Keep Last 2 Versions)"
-msgstr "Puhdista vanhat paketit (säilytä viimeiset 2 versiota)"
+msgstr "Siivoa vanhat paketit (pidä 2 viimeisintä versiota)"
 
 msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
-msgstr "Tyhjennä Pacmanin välimuisti (täysi) - Varoitus! Tämä poistaa kaikki ladatut paketit."
+msgstr "Tyhjennä Pacman-välimuisti (täysi) - Varoitus! Tämä poistaa kaikki ladatut paketit."
 
 msgid "Cleanup Done"
 msgstr "Siivous valmis"
@@ -39,13 +39,13 @@ msgid "Error"
 msgstr "Virhe"
 
 msgid "Failed to apply system language:"
-msgstr "Järjestelmän kielen käyttöönotto epäonnistui:"
+msgstr "Järjestelmäkielen asettaminen epäonnistui:"
 
 msgid "Free"
 msgstr "Vapaa"
 
 msgid "Info"
-msgstr "Tietoa"
+msgstr "Tiedot"
 
 msgid "Install Linux LTS"
 msgstr "Asenna Linux LTS"
@@ -54,7 +54,7 @@ msgid "Install Linux Zen"
 msgstr "Asenna Linux Zen"
 
 msgid "Invalid system language selected."
-msgstr "Virheellinen järjestelmän kieli valittu."
+msgstr "Valittu virheellinen järjestelmäkieli."
 
 msgid "Language Changed"
 msgstr "Kieli vaihdettu"
@@ -63,7 +63,7 @@ msgid "N/A"
 msgstr "Ei saatavilla"
 
 msgid "No Pacman cleanup options selected."
-msgstr "Ei valittu Pacmanin siivousvaihtoehtoja."
+msgstr "Ei Pacman-siivousvaihtoehtoja valittu."
 
 msgid "Open Documentation"
 msgstr "Avaa dokumentaatio"
@@ -72,76 +72,76 @@ msgid "Open YouTube Channel"
 msgstr "Avaa YouTube-kanava"
 
 msgid "Pacman Cleaner"
-msgstr "Pacmanin siivooja"
+msgstr "Pacman-siivooja"
 
 msgid "Pacman cleanup tasks completed."
 msgstr "Pacmanin siivoustehtävät suoritettu."
 
 msgid "Performance Monitor"
-msgstr "Suorituskykymonitori"
+msgstr "Suorituskyvyn valvonta"
 
 msgid "Processor:"
-msgstr "Suoritin:"
+msgstr "Prosessori:"
 
 msgid "RAM:"
 msgstr "RAM:"
 
 msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
-msgstr "Poista orpokkeet paketit - paketit, joita mikään asennettu paketti ei enää tarvitse."
+msgstr "Poista orvot paketit - Paketit, joita mikään asennettu paketti ei enää tarvitse."
 
 msgid "Remove Sync Folders"
 msgstr "Poista synkronointikansiot"
 
 msgid "Remove Uninstalled Packages from Cache"
-msgstr "Poista välimuistista asennettomat paketit"
+msgstr "Poista asennuksen poistetut paketit välimuistista"
 
 msgid "Removing Sync Folder"
 msgstr "Poistetaan synkronointikansiota"
 
 msgid "Run Pacman Cleanup"
-msgstr "Suorita Pacmanin siivous"
+msgstr "Suorita Pacman-siivous"
 
 msgid "Running Command"
 msgstr "Suoritetaan komentoa"
 
 msgid "Running Pacman Cleanup"
-msgstr "Suoritetaan Pacmanin siivousta"
+msgstr "Suoritetaan Pacman-siivousta"
 
 msgid "Show System Info Details"
-msgstr "Näytä järjestelmätiedot"
+msgstr "Näytä järjestelmätietojen yksityiskohdat"
 
 msgid "Show on startup"
-msgstr "Näytä käynnistyksessä"
+msgstr "Näytä käynnistyksen yhteydessä"
 
 msgid "Success"
 msgstr "Onnistui"
 
 msgid "Sync Cleaner"
-msgstr "Synkronoinnin siivooja"
+msgstr "Synkronoinnin puhdistaja"
 
 msgid "Sync folder removal initiated."
 msgstr "Synkronointikansion poisto aloitettu."
 
 msgid "System Cleaner"
-msgstr "Järjestelmän siivooja"
+msgstr "Järjestelmän puhdistaja"
 
 msgid "System Information"
 msgstr "Järjestelmätiedot"
 
 msgid "System Language"
-msgstr "Järjestelmän kieli"
+msgstr "Järjestelmäkieli"
 
 msgid "System Language:"
-msgstr "Järjestelmän kieli:"
+msgstr "Järjestelmäkieli:"
 
 msgid "System Updates"
-msgstr "Järjestelmän päivitykset"
+msgstr "Järjestelmäpäivitykset"
 
 msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
-msgstr "Järjestelmän kieli otettiin käyttöön onnistuneesti. Saatat joutua käynnistämään järjestelmän uudelleen, jotta muutokset tulevat täysin voimaan."
+msgstr "Järjestelmäkieli asetettu onnistuneesti. Joudut ehkä käynnistämään järjestelmäsi uudelleen, jotta muutokset tulevat täysin voimaan."
 
 msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
-msgstr "Tämän toiminnon suorittamiseen tarvitaan järjestelmänvalvojan oikeudet synkronointikansion poistamiseen. Saatat joutua antamaan salasanasi."
+msgstr "Tämä toiminto vaatii järjestelmänvalvojan oikeudet synkronointikansion poistamiseen. Salasanasi saatetaan kysyä."
 
 msgid "Update System (Pacman)"
 msgstr "Päivitä järjestelmä (Pacman)"
@@ -156,13 +156,13 @@ msgid "Welcome to Helwan Linux"
 msgstr "Tervetuloa Helwan Linuxiin"
 
 msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
-msgstr "Tervetuloa Helwan Linuxin maailmaan! ❤️\nOlemme täällä auttamassa sinua rakentamaan unelmasi vahvimmalle perustalle!"
+msgstr "Tervetuloa Helwan Linuxin maailmaan! ❤️\nOlemme täällä auttamassa sinua rakentamaan unelmiasi vahvimmalle pohjalle!"
 
 msgid "Yay is not installed."
 msgstr "Yay ei ole asennettu."
 
 msgid "You are about to run the following commands with root privileges:\n\n"
-msgstr "Aiot suorittaa seuraavat komennot pääkäyttäjän oikeuksilla:\n\n"
+msgstr "Olet suorittamassa seuraavia komentoja root-oikeuksilla:\n\n"
 
 msgid "\n\nAre you sure you want to continue?"
 msgstr "\n\nHaluatko varmasti jatkaa?"
@@ -172,3 +172,30 @@ msgstr "pkexec-komentoa ei löydy. Varmista, että polkit on asennettu."
 
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
 msgstr "xfce4-terminal ei ole asennettu. Asenna xfce4-terminal."
+
+msgid "Software Groups"
+msgstr "Ohjelmistoryhmät"
+
+msgid "Software Groups Installer"
+msgstr "Ohjelmistoryhmien asennusohjelma"
+
+msgid "Install Development Tools"
+msgstr "Asenna kehitystyökalut"
+
+msgid "Install Programming Languages"
+msgstr "Asenna ohjelmointikielet"
+
+msgid "Install Multimedia Suite"
+msgstr "Asenna multimediaohjelmisto"
+
+msgid "Install Internet Tools"
+msgstr "Asenna internet-työkalut"
+
+msgid "Install Office Suite"
+msgstr "Asenna toimisto-ohjelmisto"
+
+msgid "Install Gaming Tools"
+msgstr "Asenna pelityökalut"
+
+msgid "Install Docker Tools"
+msgstr "Asenna Docker-työkalut"

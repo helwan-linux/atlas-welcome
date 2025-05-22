@@ -6,7 +6,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "An error occurred while applying system language:"
-msgstr "เกิดข้อผิดพลาดขณะตั้งค่าภาษาของระบบ:"
+msgstr "เกิดข้อผิดพลาดขณะใช้ภาษาของระบบ:"
 
 msgid "Application Language:"
 msgstr "ภาษาของแอปพลิเคชัน:"
@@ -15,31 +15,31 @@ msgid "Application Theme:"
 msgstr "ธีมของแอปพลิเคชัน:"
 
 msgid "Application language has been changed. Some changes may require an application restart."
-msgstr "เปลี่ยนภาษาของแอปพลิเคชันเรียบร้อยแล้ว การเปลี่ยนแปลงบางอย่างอาจต้องรีสตาร์ทแอปพลิเคชัน"
+msgstr "ภาษาของแอปพลิเคชันถูกเปลี่ยนแล้ว การเปลี่ยนแปลงบางอย่างอาจต้องรีสตาร์ทแอปพลิเคชัน"
 
 msgid "Apply System Language"
-msgstr "ตั้งค่าภาษาของระบบ"
+msgstr "ใช้ภาษาของระบบ"
 
 msgid "Available Disk Space:"
-msgstr "พื้นที่ว่างบนดิสก์:"
+msgstr "พื้นที่ดิสก์ที่ใช้ได้:"
 
 msgid "Clean Old Packages (Keep Last 2 Versions)"
-msgstr "ลบแพ็กเกจเก่า (เก็บไว้ 2 เวอร์ชันล่าสุด)"
+msgstr "ล้างแพ็กเกจเก่า (เก็บ 2 เวอร์ชันล่าสุด)"
 
 msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
-msgstr "ล้างแคช Pacman ทั้งหมด - ระวัง! การกระทำนี้จะลบแพ็กเกจที่ดาวน์โหลดทั้งหมด"
+msgstr "ล้างแคช Pacman (ทั้งหมด) - คำเตือน! การดำเนินการนี้จะลบแพ็กเกจที่ดาวน์โหลดทั้งหมด"
 
 msgid "Cleanup Done"
 msgstr "ทำความสะอาดเสร็จสิ้น"
 
 msgid "Confirmation"
-msgstr "การยืนยัน"
+msgstr "ยืนยัน"
 
 msgid "Error"
 msgstr "ข้อผิดพลาด"
 
 msgid "Failed to apply system language:"
-msgstr "ไม่สามารถตั้งค่าภาษาของระบบได้:"
+msgstr "ไม่สามารถใช้ภาษาของระบบได้:"
 
 msgid "Free"
 msgstr "ว่าง"
@@ -60,52 +60,52 @@ msgid "Language Changed"
 msgstr "เปลี่ยนภาษาแล้ว"
 
 msgid "N/A"
-msgstr "ไม่มีข้อมูล"
+msgstr "ไม่ระบุ"
 
 msgid "No Pacman cleanup options selected."
-msgstr "ไม่ได้เลือกตัวเลือกการล้าง Pacman ใด ๆ"
+msgstr "ไม่ได้เลือกตัวเลือกการล้าง Pacman"
 
 msgid "Open Documentation"
-msgstr "เปิดเอกสารประกอบ"
+msgstr "เปิดเอกสาร"
 
 msgid "Open YouTube Channel"
 msgstr "เปิดช่อง YouTube"
 
 msgid "Pacman Cleaner"
-msgstr "เครื่องมือทำความสะอาด Pacman"
+msgstr "ตัวล้าง Pacman"
 
 msgid "Pacman cleanup tasks completed."
-msgstr "งานล้าง Pacman เสร็จสมบูรณ์"
+msgstr "งานล้าง Pacman เสร็จสิ้นแล้ว"
 
 msgid "Performance Monitor"
-msgstr "ตัวติดตามประสิทธิภาพ"
+msgstr "ตัวตรวจสอบประสิทธิภาพ"
 
 msgid "Processor:"
-msgstr "โปรเซสเซอร์:"
+msgstr "หน่วยประมวลผล:"
 
 msgid "RAM:"
-msgstr "หน่วยความจำ (RAM):"
+msgstr "RAM:"
 
 msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
-msgstr "ลบแพ็กเกจกำพร้า – แพ็กเกจที่ไม่มีโปรแกรมใดใช้งานแล้ว"
+msgstr "ลบแพ็กเกจที่ไม่มีเจ้าของ - แพ็กเกจที่ไม่จำเป็นต้องใช้โดยแพ็กเกจที่ติดตั้งอีกต่อไป"
 
 msgid "Remove Sync Folders"
 msgstr "ลบโฟลเดอร์ซิงค์"
 
 msgid "Remove Uninstalled Packages from Cache"
-msgstr "ลบแพ็กเกจที่ถอนการติดตั้งแล้วจากแคช"
+msgstr "ลบแพ็กเกจที่ถอนการติดตั้งออกจากแคช"
 
 msgid "Removing Sync Folder"
 msgstr "กำลังลบโฟลเดอร์ซิงค์"
 
 msgid "Run Pacman Cleanup"
-msgstr "เรียกใช้งานล้าง Pacman"
+msgstr "เรียกใช้การล้าง Pacman"
 
 msgid "Running Command"
-msgstr "กำลังดำเนินการคำสั่ง"
+msgstr "กำลังเรียกใช้คำสั่ง"
 
 msgid "Running Pacman Cleanup"
-msgstr "กำลังล้าง Pacman"
+msgstr "กำลังเรียกใช้การล้าง Pacman"
 
 msgid "Show System Info Details"
 msgstr "แสดงรายละเอียดข้อมูลระบบ"
@@ -117,13 +117,13 @@ msgid "Success"
 msgstr "สำเร็จ"
 
 msgid "Sync Cleaner"
-msgstr "เครื่องมือทำความสะอาดซิงค์"
+msgstr "ตัวล้างซิงค์"
 
 msgid "Sync folder removal initiated."
-msgstr "เริ่มลบโฟลเดอร์ซิงค์แล้ว"
+msgstr "เริ่มการลบโฟลเดอร์ซิงค์แล้ว"
 
 msgid "System Cleaner"
-msgstr "เครื่องมือทำความสะอาดระบบ"
+msgstr "ตัวล้างระบบ"
 
 msgid "System Information"
 msgstr "ข้อมูลระบบ"
@@ -135,13 +135,13 @@ msgid "System Language:"
 msgstr "ภาษาของระบบ:"
 
 msgid "System Updates"
-msgstr "อัปเดตระบบ"
+msgstr "การอัปเดตระบบ"
 
 msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
-msgstr "ตั้งค่าภาษาของระบบเรียบร้อยแล้ว อาจจำเป็นต้องรีสตาร์ทเครื่องเพื่อให้การเปลี่ยนแปลงมีผลเต็มที่"
+msgstr "ใช้ภาษาของระบบสำเร็จแล้ว คุณอาจต้องรีสตาร์ทระบบเพื่อให้การเปลี่ยนแปลงมีผลสมบูรณ์"
 
 msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
-msgstr "การกระทำนี้ต้องใช้สิทธิ์ผู้ดูแลระบบในการลบโฟลเดอร์ซิงค์ อาจถูกถามรหัสผ่าน"
+msgstr "การดำเนินการนี้ต้องใช้สิทธิ์ผู้ดูแลระบบเพื่อลบโฟลเดอร์ซิงค์ คุณอาจถูกขอรหัสผ่าน"
 
 msgid "Update System (Pacman)"
 msgstr "อัปเดตระบบ (Pacman)"
@@ -156,10 +156,10 @@ msgid "Welcome to Helwan Linux"
 msgstr "ยินดีต้อนรับสู่ Helwan Linux"
 
 msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
-msgstr "ยินดีต้อนรับสู่โลกของ Helwan Linux! ❤️\nเราพร้อมช่วยคุณสร้างฝันบนรากฐานที่มั่นคงที่สุด!"
+msgstr "ยินดีต้อนรับสู่โลกของ Helwan Linux! ❤️\nเราพร้อมที่จะช่วยคุณสร้างฝันของคุณบนรากฐานที่แข็งแกร่งที่สุด!"
 
 msgid "Yay is not installed."
-msgstr "ยังไม่ได้ติดตั้ง Yay"
+msgstr "ไม่ได้ติดตั้ง Yay"
 
 msgid "You are about to run the following commands with root privileges:\n\n"
 msgstr "คุณกำลังจะเรียกใช้คำสั่งต่อไปนี้ด้วยสิทธิ์ root:\n\n"
@@ -171,4 +171,31 @@ msgid "pkexec command not found. Ensure polkit is installed."
 msgstr "ไม่พบคำสั่ง pkexec โปรดตรวจสอบให้แน่ใจว่าได้ติดตั้ง polkit แล้ว"
 
 msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
-msgstr "ไม่ได้ติดตั้ง xfce4-terminal กรุณาติดตั้ง xfce4-terminal"
+msgstr "ไม่ได้ติดตั้ง xfce4-terminal โปรดติดตั้ง xfce4-terminal"
+
+msgid "Software Groups"
+msgstr "กลุ่มซอฟต์แวร์"
+
+msgid "Software Groups Installer"
+msgstr "ตัวติดตั้งกลุ่มซอฟต์แวร์"
+
+msgid "Install Development Tools"
+msgstr "ติดตั้งเครื่องมือสำหรับนักพัฒนา"
+
+msgid "Install Programming Languages"
+msgstr "ติดตั้งภาษาโปรแกรม"
+
+msgid "Install Multimedia Suite"
+msgstr "ติดตั้งชุดมัลติมีเดีย"
+
+msgid "Install Internet Tools"
+msgstr "ติดตั้งเครื่องมืออินเทอร์เน็ต"
+
+msgid "Install Office Suite"
+msgstr "ติดตั้งชุด Office"
+
+msgid "Install Gaming Tools"
+msgstr "ติดตั้งเครื่องมือเกม"
+
+msgid "Install Docker Tools"
+msgstr "ติดตั้งเครื่องมือ Docker"
