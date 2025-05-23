@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Helwan Linux\n"
+"Language: ta_IN.UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "An error occurred while applying system language:"
+msgstr "கணினி மொழியைப் பயன்படுத்தும்போது பிழை ஏற்பட்டது:"
+
+msgid "Application Language:"
+msgstr "பயன்பாட்டு மொழி:"
+
+msgid "Application Theme:"
+msgstr "பயன்பாட்டு தீம்:"
+
+msgid "Application language has been changed. Some changes may require an application restart."
+msgstr "பயன்பாட்டு மொழி மாற்றப்பட்டுள்ளது. சில மாற்றங்களுக்கு பயன்பாட்டை மறுதொடக்கம் செய்ய வேண்டியிருக்கலாம்."
+
+msgid "Apply System Language"
+msgstr "கணினி மொழியைப் பயன்படுத்து"
+
+msgid "Available Disk Space:"
+msgstr "கிடைக்கும் வட்டு இடம்:"
+
+msgid "Clean Old Packages (Keep Last 2 Versions)"
+msgstr "பழைய தொகுப்புகளை சுத்தம் செய் (கடைசி 2 பதிப்புகளை வைத்திரு)"
+
+msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
+msgstr "பேக்மேன் தற்காலிக நினைவகத்தை சுத்தம் செய் (முழுமையாக) - எச்சரிக்கை! இது பதிவிறக்கம் செய்யப்பட்ட அனைத்து தொகுப்புகளையும் நீக்கும்."
+
+msgid "Cleanup Done"
+msgstr "சுத்தம் செய்தல் முடிந்தது"
+
+msgid "Confirmation"
+msgstr "உறுதிப்படுத்தல்"
+
+msgid "Error"
+msgstr "பிழை"
+
+msgid "Failed to apply system language:"
+msgstr "கணினி மொழியைப் பயன்படுத்த முடியவில்லை:"
+
+msgid "Free"
+msgstr "இலவசம்"
+
+msgid "Info"
+msgstr "தகவல்"
+
+msgid "Install Linux LTS"
+msgstr "லினக்ஸ் LTS ஐ நிறுவு"
+
+msgid "Install Linux Zen"
+msgstr "லினக்ஸ் ஜென் ஐ நிறுவு"
+
+msgid "Invalid system language selected."
+msgstr "தவறான கணினி மொழி தேர்ந்தெடுக்கப்பட்டது."
+
+msgid "Language Changed"
+msgstr "மொழி மாற்றப்பட்டது"
+
+msgid "N/A"
+msgstr "பொருந்தாது"
+
+msgid "No Pacman cleanup options selected."
+msgstr "பேக்மேன் சுத்தம் செய்யும் விருப்பங்கள் எதுவும் தேர்ந்தெடுக்கப்படவில்லை."
+
+msgid "Open Documentation"
+msgstr "ஆவணங்களைத் திற"
+
+msgid "Open YouTube Channel"
+msgstr "யூடியூப் சேனலைத் திற"
+
+msgid "Pacman Cleaner"
+msgstr "பேக்மேன் கிளீனர்"
+
+msgid "Pacman cleanup tasks completed."
+msgstr "பேக்மேன் சுத்தம் செய்யும் பணிகள் முடிந்தது."
+
+msgid "Performance Monitor"
+msgstr "செயல்திறன் கண்காணிப்பு"
+
+msgid "Processor:"
+msgstr "செயலி:"
+
+msgid "RAM:"
+msgstr "ரேம்:"
+
+msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
+msgstr "அனாதை தொகுப்புகளை அகற்று - நிறுவப்பட்ட எந்த தொகுப்பிற்கும் இனி தேவையில்லாத தொகுப்புகள்."
+
+msgid "Remove Sync Folders"
+msgstr "ஒத்திசைவு கோப்புறைகளை அகற்று"
+
+msgid "Remove Uninstalled Packages from Cache"
+msgstr "நிறுவப்படாத தொகுப்புகளை தற்காலிக நினைவகத்திலிருந்து அகற்று"
+
+msgid "Removing Sync Folder"
+msgstr "ஒத்திசைவு கோப்புறை அகற்றப்படுகிறது"
+
+msgid "Run Pacman Cleanup"
+msgstr "பேக்மேன் சுத்தம் செய்வதை இயக்கு"
+
+msgid "Running Command"
+msgstr "கட்டளை இயங்குகிறது"
+
+msgid "Running Pacman Cleanup"
+msgstr "பேக்மேன் சுத்தம் செய்வது இயங்குகிறது"
+
+msgid "Show System Info Details"
+msgstr "கணினி தகவல் விவரங்களைக் காட்டு"
+
+msgid "Show on startup"
+msgstr "தொடங்கும் போது காட்டு"
+
+msgid "Success"
+msgstr "வெற்றி"
+
+msgid "Sync Cleaner"
+msgstr "ஒத்திசைவு கிளீனர்"
+
+msgid "Sync folder removal initiated."
+msgstr "ஒத்திசைவு கோப்புறை நீக்கம் தொடங்கப்பட்டது."
+
+msgid "System Cleaner"
+msgstr "கணினி கிளீனர்"
+
+msgid "System Information"
+msgstr "கணினி தகவல்"
+
+msgid "System Language"
+msgstr "கணினி மொழி"
+
+msgid "System Language:"
+msgstr "கணினி மொழி:"
+
+msgid "System Updates"
+msgstr "கணினி புதுப்பிப்புகள்"
+
+msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
+msgstr "கணினி மொழி வெற்றிகரமாகப் பயன்படுத்தப்பட்டது. மாற்றங்கள் முழுமையாகச் செயல்பட உங்கள் கணினியை மறுதொடக்கம் செய்ய வேண்டியிருக்கலாம்."
+
+msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
+msgstr "இந்தச் செயலுக்கு ஒத்திசைவு கோப்புறையை அகற்ற நிர்வாகி சலுகைகள் தேவை. உங்கள் கடவுச்சொல் கேட்கப்படலாம்."
+
+msgid "Update System (Pacman)"
+msgstr "கணினியைப் புதுப்பி (பேக்மேன்)"
+
+msgid "Update System (Yay)"
+msgstr "கணினியைப் புதுப்பி (யே)"
+
+msgid "Welcome"
+msgstr "வரவேற்பு"
+
+msgid "Welcome to Helwan Linux"
+msgstr "ஹெல்வான் லினக்ஸ்க்கு வரவேற்கிறோம்"
+
+msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
+msgstr "ஹெல்வான் லினக்ஸ் உலகிற்கு வரவேற்கிறோம்! ❤️\nஉங்கள் கனவுகளை வலிமையான அடித்தளத்தில் உருவாக்க நாங்கள் இங்கு இருக்கிறோம்!"
+
+msgid "Yay is not installed."
+msgstr "யே நிறுவப்படவில்லை."
+
+msgid "You are about to run the following commands with root privileges:\n\n"
+msgstr "நீங்கள் ரூட் சலுகைகளுடன் பின்வரும் கட்டளைகளை இயக்க உள்ளீர்கள்:\n\n"
+
+msgid "\n\nAre you sure you want to continue?"
+msgstr "\n\nநீங்கள் தொடர விரும்புகிறீர்களா?"
+
+msgid "pkexec command not found. Ensure polkit is installed."
+msgstr "pkexec கட்டளை காணப்படவில்லை. polkit நிறுவப்பட்டுள்ளதா என்பதை உறுதிப்படுத்தவும்."
+
+msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
+msgstr "xfce4-terminal நிறுவப்படவில்லை. தயவுசெய்து xfce4-terminal ஐ நிறுவவும்."
+
+msgid "Software Groups"
+msgstr "மென்பொருள் குழுக்கள்"
+
+msgid "Software Groups Installer"
+msgstr "மென்பொருள் குழுக்கள் நிறுவி"
+
+msgid "Install Development Tools"
+msgstr "மேம்பாட்டு கருவிகளை நிறுவு"
+
+msgid "Install Programming Languages"
+msgstr "நிரலாக்க மொழிகளை நிறுவு"
+
+msgid "Install Multimedia Suite"
+msgstr "மல்டிமீடியா தொகுப்பை நிறுவு"
+
+msgid "Install Internet Tools"
+msgstr "இணைய கருவிகளை நிறுவு"
+
+msgid "Install Office Suite"
+msgstr "அலுவலக தொகுப்பை நிறுவு"
+
+msgid "Install Gaming Tools"
+msgstr "கேமிங் கருவிகளை நிறுவு"
+
+msgid "Install Docker Tools"
+msgstr "டாக்கர் கருவிகளை நிறுவு"

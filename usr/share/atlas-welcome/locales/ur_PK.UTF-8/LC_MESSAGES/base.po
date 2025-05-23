@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Helwan Linux\n"
+"Language: ur_PK.UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "An error occurred while applying system language:"
+msgstr "سسٹم کی زبان لاگو کرتے وقت ایک خرابی پیش آئی:"
+
+msgid "Application Language:"
+msgstr "ایپلیکیشن کی زبان:"
+
+msgid "Application Theme:"
+msgstr "ایپلیکیشن کی تھیم:"
+
+msgid "Application language has been changed. Some changes may require an application restart."
+msgstr "ایپلیکیشن کی زبان تبدیل کر دی گئی ہے۔ کچھ تبدیلیوں کے لیے ایپلیکیشن کو دوبارہ شروع کرنے کی ضرورت پڑ سکتی ہے۔"
+
+msgid "Apply System Language"
+msgstr "سسٹم کی زبان لاگو کریں"
+
+msgid "Available Disk Space:"
+msgstr "دستیاب ڈسک کی جگہ:"
+
+msgid "Clean Old Packages (Keep Last 2 Versions)"
+msgstr "پرانے پیکیجز صاف کریں (آخری 2 ورژن رکھیں)"
+
+msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
+msgstr "Pacman کیشے صاف کریں (مکمل) - خبردار! یہ تمام ڈاؤن لوڈ کیے گئے پیکیجز کو ہٹا دے گا۔"
+
+msgid "Cleanup Done"
+msgstr "صفائی مکمل"
+
+msgid "Confirmation"
+msgstr "تصدیق"
+
+msgid "Error"
+msgstr "خرابی"
+
+msgid "Failed to apply system language:"
+msgstr "سسٹم کی زبان لاگو کرنے میں ناکام رہا:"
+
+msgid "Free"
+msgstr "خالی"
+
+msgid "Info"
+msgstr "معلومات"
+
+msgid "Install Linux LTS"
+msgstr "لینکس LTS انسٹال کریں"
+
+msgid "Install Linux Zen"
+msgstr "لینکس زین انسٹال کریں"
+
+msgid "Invalid system language selected."
+msgstr "غلط سسٹم کی زبان منتخب کی گئی ہے۔"
+
+msgid "Language Changed"
+msgstr "زبان تبدیل ہو گئی"
+
+msgid "N/A"
+msgstr "لاگو نہیں"
+
+msgid "No Pacman cleanup options selected."
+msgstr "Pacman کی صفائی کے کوئی آپشن منتخب نہیں کیے گئے۔"
+
+msgid "Open Documentation"
+msgstr "دستاویزات کھولیں"
+
+msgid "Open YouTube Channel"
+msgstr "یوٹیوب چینل کھولیں"
+
+msgid "Pacman Cleaner"
+msgstr "Pacman کلینر"
+
+msgid "Pacman cleanup tasks completed."
+msgstr "Pacman کی صفائی کے کام مکمل ہو گئے۔"
+
+msgid "Performance Monitor"
+msgstr "کارکردگی کی نگرانی"
+
+msgid "Processor:"
+msgstr "پروسیسر:"
+
+msgid "RAM:"
+msgstr "ریم:"
+
+msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
+msgstr "یتیم پیکیجز ہٹائیں - وہ پیکیجز جو اب کسی بھی انسٹال شدہ پیکیج کے لیے ضروری نہیں ہیں۔"
+
+msgid "Remove Sync Folders"
+msgstr "سنک فولڈرز ہٹائیں"
+
+msgid "Remove Uninstalled Packages from Cache"
+msgstr "کیشے سے غیر انسٹال شدہ پیکیجز ہٹائیں"
+
+msgid "Removing Sync Folder"
+msgstr "سنک فولڈر ہٹایا جا رہا ہے"
+
+msgid "Run Pacman Cleanup"
+msgstr "Pacman کی صفائی چلائیں"
+
+msgid "Running Command"
+msgstr "کمانڈ چل رہی ہے"
+
+msgid "Running Pacman Cleanup"
+msgstr "Pacman کی صفائی چل رہی ہے"
+
+msgid "Show System Info Details"
+msgstr "سسٹم کی معلومات کی تفصیلات دکھائیں"
+
+msgid "Show on startup"
+msgstr "شروع ہونے پر دکھائیں"
+
+msgid "Success"
+msgstr "کامیابی"
+
+msgid "Sync Cleaner"
+msgstr "سنک کلینر"
+
+msgid "Sync folder removal initiated."
+msgstr "سنک فولڈر کو ہٹانے کا عمل شروع ہو گیا ہے۔"
+
+msgid "System Cleaner"
+msgstr "سسٹم کلینر"
+
+msgid "System Information"
+msgstr "سسٹم کی معلومات"
+
+msgid "System Language"
+msgstr "سسٹم کی زبان"
+
+msgid "System Language:"
+msgstr "سسٹم کی زبان:"
+
+msgid "System Updates"
+msgstr "سسٹم اپڈیٹس"
+
+msgid "System language applied successfully. You might need to restart your system for the changes to take full effect."
+msgstr "سسٹم کی زبان کامیابی سے لاگو ہو گئی ہے۔ تبدیلیوں کے مکمل اثر انداز ہونے کے لیے آپ کو اپنے سسٹم کو دوبارہ شروع کرنے کی ضرورت پڑ سکتی ہے۔"
+
+msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
+msgstr "اس کارروائی کے لیے سنک فولڈر کو ہٹانے کے لیے ایڈمنسٹریٹر کے حقوق درکار ہیں۔ آپ سے آپ کا پاس ورڈ پوچھا جا سکتا ہے۔"
+
+msgid "Update System (Pacman)"
+msgstr "سسٹم اپ ڈیٹ کریں (Pacman)"
+
+msgid "Update System (Yay)"
+msgstr "سسٹم اپ ڈیٹ کریں (Yay)"
+
+msgid "Welcome"
+msgstr "خوش آمدید"
+
+msgid "Welcome to Helwan Linux"
+msgstr "حلوان لینکس میں خوش آمدید"
+
+msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
+msgstr "حلوان لینکس کی دنیا میں خوش آمدید! ❤️\nہم یہاں آپ کو مضبوط ترین بنیاد پر اپنے خوابوں کی تعمیر میں مدد کرنے کے لیے موجود ہیں!"
+
+msgid "Yay is not installed."
+msgstr "Yay انسٹال نہیں ہے۔"
+
+msgid "You are about to run the following commands with root privileges:\n\n"
+msgstr "آپ روٹ کے حقوق کے ساتھ درج ذیل کمانڈز چلانے والے ہیں:\n\n"
+
+msgid "\n\nAre you sure you want to continue?"
+msgstr "\n\nکیا آپ جاری رکھنا چاہتے ہیں؟"
+
+msgid "pkexec command not found. Ensure polkit is installed."
+msgstr "pkexec کمانڈ نہیں ملی۔ یقینی بنائیں کہ polkit انسٹال ہے۔"
+
+msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
+msgstr "xfce4-terminal انسٹال نہیں ہے۔ براہ کرم xfce4-terminal انسٹال کریں۔"
+
+msgid "Software Groups"
+msgstr "سافٹ ویئر گروپس"
+
+msgid "Software Groups Installer"
+msgstr "سافٹ ویئر گروپس انسٹالر"
+
+msgid "Install Development Tools"
+msgstr "ڈیولپمنٹ ٹولز انسٹال کریں"
+
+msgid "Install Programming Languages"
+msgstr "پروگرامنگ زبانیں انسٹال کریں"
+
+msgid "Install Multimedia Suite"
+msgstr "ملٹی میڈیا سویٹ انسٹال کریں"
+
+msgid "Install Internet Tools"
+msgstr "انٹرنیٹ ٹولز انسٹال کریں"
+
+msgid "Install Office Suite"
+msgstr "آفس سویٹ انسٹال کریں"
+
+msgid "Install Gaming Tools"
+msgstr "گیمنگ ٹولز انسٹال کریں"
+
+msgid "Install Docker Tools"
+msgstr "ڈاکر ٹولز انسٹال کریں"

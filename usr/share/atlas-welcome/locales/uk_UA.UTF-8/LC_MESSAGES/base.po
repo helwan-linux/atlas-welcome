@@ -1,0 +1,201 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Helwan Linux\n"
+"Language: uk_UA.UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "An error occurred while applying system language:"
+msgstr "Під час застосування системної мови сталася помилка:"
+
+msgid "Application Language:"
+msgstr "Мова програми:"
+
+msgid "Application Theme:"
+msgstr "Тема програми:"
+
+msgid "Application language has been changed. Some changes may require an application restart."
+msgstr "Мову програми змінено. Деякі зміни можуть вимагати перезапуску програми."
+
+msgid "Apply System Language"
+msgstr "Застосувати системну мову"
+
+msgid "Available Disk Space:"
+msgstr "Доступний дисковий простір:"
+
+msgid "Clean Old Packages (Keep Last 2 Versions)"
+msgstr "Очистити старі пакунки (зберегти 2 останні версії)"
+
+msgid "Clean Pacman Cache (Full) - Warning! This will remove all downloaded packages."
+msgstr "Очистити кеш Pacman (повністю) - Увага! Це видалить усі завантажені пакунки."
+
+msgid "Cleanup Done"
+msgstr "Очищення завершено"
+
+msgid "Confirmation"
+msgstr "Підтвердження"
+
+msgid "Error"
+msgstr "Помилка"
+
+msgid "Failed to apply system language:"
+msgstr "Не вдалося застосувати системну мову:"
+
+msgid "Free"
+msgstr "Вільно"
+
+msgid "Info"
+msgstr "Інформація"
+
+msgid "Install Linux LTS"
+msgstr "Встановити Linux LTS"
+
+msgid "Install Linux Zen"
+msgstr "Встановити Linux Zen"
+
+msgid "Invalid system language selected."
+msgstr "Вибрано недійсну системну мову."
+
+msgid "Language Changed"
+msgstr "Мова змінена"
+
+msgid "N/A"
+msgstr "Н/Д"
+
+msgid "No Pacman cleanup options selected."
+msgstr "Не вибрано жодних параметрів очищення Pacman."
+
+msgid "Open Documentation"
+msgstr "Відкрити документацію"
+
+msgid "Open YouTube Channel"
+msgstr "Відкрити канал YouTube"
+
+msgid "Pacman Cleaner"
+msgstr "Очищувач Pacman"
+
+msgid "Pacman cleanup tasks completed."
+msgstr "Завдання очищення Pacman завершено."
+
+msgid "Performance Monitor"
+msgstr "Монітор продуктивності"
+
+msgid "Processor:"
+msgstr "Процесор:"
+
+msgid "RAM:"
+msgstr "ОЗП:"
+
+msgid "Remove Orphan Packages - Packages that are no longer required by any installed package."
+msgstr "Видалити осиротілі пакунки - Пакунки, які більше не потрібні жодному встановленому пакунку."
+
+msgid "Remove Sync Folders"
+msgstr "Видалити папки синхронізації"
+
+msgid "Remove Uninstalled Packages from Cache"
+msgstr "Видалити деінстальовані пакунки з кешу"
+
+msgid "Removing Sync Folder"
+msgstr "Видалення папки синхронізації"
+
+msgid "Run Pacman Cleanup"
+msgstr "Запустити очищення Pacman"
+
+msgid "Running Command"
+msgstr "Виконується команда"
+
+msgid "Running Pacman Cleanup"
+msgstr "Виконується очищення Pacman"
+
+msgid "Show System Info Details"
+msgstr "Показати деталі системної інформації"
+
+msgid "Show on startup"
+msgstr "Показати під час запуску"
+
+msgid "Success"
+msgstr "Успіх"
+
+msgid "Sync Cleaner"
+msgstr "Очищувач синхронізації"
+
+msgid "Sync folder removal initiated."
+msgstr "Ініційовано видалення папки синхронізації."
+
+msgid "System Cleaner"
+msgstr "Системний очищувач"
+
+msgid "System Information"
+msgstr "Системна інформація"
+
+msgid "System Language"
+msgstr "Системна мова"
+
+msgid "System Language:"
+msgstr "Системна мова:"
+
+msgid "System Updates"
+msgstr "Оновлення системи"
+
+msgid "Системна мова успішно застосована. Можливо, вам знадобиться перезавантажити систему, щоб зміни набули чинності."
+msgstr "Системна мова успішно застосована. Можливо, вам знадобиться перезавантажити систему, щоб зміни набули чинності."
+
+msgid "This action requires administrator privileges to remove the sync folder. You might be asked for your password."
+msgstr "Ця дія вимагає прав адміністратора для видалення папки синхронізації. Можливо, вас попросять ввести пароль."
+
+msgid "Update System (Pacman)"
+msgstr "Оновити систему (Pacman)"
+
+msgid "Update System (Yay)"
+msgstr "Оновити систему (Yay)"
+
+msgid "Welcome"
+msgstr "Ласкаво просимо"
+
+msgid "Welcome to Helwan Linux"
+msgstr "Ласкаво просимо до Helwan Linux"
+
+msgid "Welcome to the world of Helwan Linux! ❤️\nWe are here to help you build your dreams on the strongest foundation!"
+msgstr "Ласкаво просимо до світу Helwan Linux! ❤️\nМи тут, щоб допомогти вам побудувати ваші мрії на найміцнішій основі!"
+
+msgid "Yay is not installed."
+msgstr "Yay не встановлено."
+
+msgid "You are about to run the following commands with root privileges:\n\n"
+msgstr "Ви збираєтеся запустити наступні команди з правами root:\n\n"
+
+msgid "\n\nAre you sure you want to continue?"
+msgstr "\n\nВи впевнені, що хочете продовжити?"
+
+msgid "pkexec command not found. Ensure polkit is installed."
+msgstr "Команду pkexec не знайдено. Переконайтеся, що polkit встановлено."
+
+msgid "xfce4-terminal is not installed. Please install xfce4-terminal."
+msgstr "xfce4-terminal не встановлено. Будь ласка, встановіть xfce4-terminal."
+
+msgid "Software Groups"
+msgstr "Групи програмного забезпечення"
+
+msgid "Software Groups Installer"
+msgstr "Інсталятор груп програмного забезпечення"
+
+msgid "Install Development Tools"
+msgstr "Встановити інструменти розробки"
+
+msgid "Install Programming Languages"
+msgstr "Встановити мови програмування"
+
+msgid "Install Multimedia Suite"
+msgstr "Встановити мультимедійний пакет"
+
+msgid "Install Internet Tools"
+msgstr "Встановити інтернет-інструменти"
+
+msgid "Install Office Suite"
+msgstr "Встановити офісний пакет"
+
+msgid "Install Gaming Tools"
+msgstr "Встановити ігрові інструменти"
+
+msgid "Install Docker Tools"
+msgstr "Встановити інструменти Docker"
