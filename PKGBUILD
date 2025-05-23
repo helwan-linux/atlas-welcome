@@ -7,7 +7,7 @@ pkgdesc="Welcome application for helwanlinux"
 arch=('any')
 url="https://github.com/helwan-linux/atlas-welcome"
 license=('GPL3')
-conflicts=('atlas-welcome-app')
+conflicts=('hel-welcome-app')
 makedepends=('git')
 depends=('python-pyqt5' 'gettext' 'libwnck3' 'arandr')
 provides=("${pkgname}")
@@ -19,11 +19,11 @@ sha256sums=('SKIP')
 package() {
 
     # تثبيت مجلد التطبيق بالكامل إلى /usr/share
-    install -Dm755 -d "$pkgdir/usr/share/atlas-welcome-app"
-    cp -r "${srcdir}/${_pkgname}/usr/share/atlas-welcome-app/" "$pkgdir/usr/share/"
+    install -Dm755 -d "$pkgdir/usr/share/atlas-welcome"
+    cp -r "${srcdir}/${_pkgname}/usr/share/atlas-welcome/" "$pkgdir/usr/share/"
     
   # تثبيت الملف التنفيذي (سكربت بايثون) في المسار الصحيح
-  install -Dm755 "${srcdir}/${_pkgname}/usr/share/atlas-welcome-app/atlas.py" "$pkgdir/usr/bin/helwan-welcome-app"
+  install -Dm755 "${srcdir}/${_pkgname}/usr/share/atlas-welcome/atlas.py" "$pkgdir/usr/bin/helwan-welcome-app"
 
   # إنشاء مجلد تطبيقات إذا لم يكن موجودًا
   install -dm755 "$pkgdir/usr/share/applications"
