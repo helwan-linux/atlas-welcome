@@ -38,9 +38,9 @@ package() {
   # تثبيت ملفات الأيقونة في المسارات الصحيحة
   find "${srcdir}/${_pkgname}/usr/share/hicolor" -name "helwan-welcom.*" -print0 | while IFS= read -r -d $'\0' file; do
     if [[ "$(basename "$file")" == "helwan-welcom.svg" ]]; then
-      install -Dm644 "$file" "$pkgdir/usr/share/icons/hicolor/scalable/apps/helwan-welcome.svg"
+      install -Dm644 "$file" "$pkgdir/usr/share/icons/hicolor/scalable/apps/helwan-welcom.svg"
     elif [[ "$(basename "$file")" == "helwan-welcom.png" ]]; then
-      install -Dm644 "$file" "$pkgdir/usr/share/icons/hicolor/512x512/apps/helwan-welcome.png"
+      install -Dm644 "$file" "$pkgdir/usr/share/icons/hicolor/512x512/apps/helwan-welcom.png"
     fi
   done
 
