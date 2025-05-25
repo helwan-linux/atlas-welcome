@@ -1206,10 +1206,82 @@ class WelcomeApp(QWidget):
 			return False
 
 	def install_linux_lts(self):
-		self.run_terminal_cmd("pkexec pacman -S --needed linux-lts linux-lts-headers")
+		# أمر التثبيت
+		cmd = (
+			"pkexec bash -c '"
+			"pacman -S --needed linux-lts linux-lts-headers && "
+			"if pacman -Qs linux-lts > /dev/null; then "
+			"echo \"linux-lts installed successfully.\"; "
+			"grub-mkconfig -o /boot/grub/grub.cfg; "
+			"else "
+			"echo \"Failed to install linux-lts.\" >&2; exit 1; "
+			"fi'"
+		)
+
+		print("Running command:", cmd)  # دي هتطبع الأمر قبل تشغيله
+
+		subprocess.run(cmd, shell=True)
+
+		# نسأل المستخدم بعد انتهاء التثبيت
+		reply = QMessageBox.question(
+			self,
+			_("Set LTS as default"),
+			_("Do you want to make the LTS kernel the default boot option?"),
+			QMessageBox.Yes | QMessageBox.No
+		)
+
+		if reply == QMessageBox.Yes:
+			# أمر ضبط الكيرنل الافتراضي
+			set_default_cmd = (
+				"pkexec bash -c '"
+				"grub-set-default \"Advanced options for Arch Linux>Arch Linux, with Linux lts\" && "
+				"grub-mkconfig -o /boot/grub/grub.cfg'"
+			)
+
+			print("Running command:", set_default_cmd)
+
+			subprocess.run(set_default_cmd, shell=True)
+
+
+
+
 
 	def install_linux_zen(self):
-		self.run_terminal_cmd("pkexec pacman -S --needed linux-zen linux-zen-headers")
+		# أمر التثبيت
+		cmd = (
+			"pkexec bash -c '"
+			"pacman -S --needed linux-zen linux-zen-headers && "
+			"if pacman -Qs linux-zen > /dev/null; then "
+			"echo \"linux-zen installed successfully.\"; "
+			"grub-mkconfig -o /boot/grub/grub.cfg; "
+			"else "
+			"echo \"Failed to install linux-zen.\" >&2; exit 1; "
+			"fi'"
+		)
+
+		print("Running command:", cmd)  # دي هتطبع الأمر قبل تشغيله
+
+		subprocess.run(cmd, shell=True)
+
+		# نسأل المستخدم بعد انتهاء التثبيت
+		reply = QMessageBox.question(
+			self,
+			_("Set LTS as default"),
+			_("Do you want to make the zen kernel the default boot option?"),
+			QMessageBox.Yes | QMessageBox.No
+		)
+
+		if reply == QMessageBox.Yes:
+			# أمر ضبط الكيرنل الافتراضي
+			set_default_cmd = (
+				"pkexec bash -c '"
+				"grub-set-default \"Advanced options for Arch Linux>Arch Linux, with Linux zen\" && "
+				"grub-mkconfig -o /boot/grub/grub.cfg'"
+			)
+
+			print("Running command:", set_default_cmd)
+
+			subprocess.run(set_default_cmd, shell=True)
 
 	def apply_system_language(self):
 		selected_lang_name = self.system_language_combobox.currentText()
@@ -1219,114 +1291,55 @@ class WelcomeApp(QWidget):
 				lang_code = code
 				break
 
-		if lang_code:
-			success, error = self.activate_locale_manually(lang_code)
-			if success:
-				QMessageBox.information(self, _("System Language"),
-					_("System language applied successfully. You might need to restart your system for the changes to take full effect."))
-			else:
-				QMessageBox.critical(self, _("Error"),
-					f"{_('Failed to apply system language:')} {error}")
-		else:
-			QMessageBox.critical(self, _("Error"), _("Invalid system language selected."))
-	
+		if not lang_code:
+			QMessageBox.critical(self, _("Error"), _("Please select a valid system language."))
+			return
 
-	def activate_locale_manually(self, lang_code):
-		locale_gen_path = "/etc/locale.gen"
-		locale_default_path = "/etc/default/locale"
-		locale_line = f"{lang_code}.UTF-8 UTF-8"
+		# نتأكد إن lang_code مش فيها .UTF-8 عشان ما نكررهاش
+		base_lang_code = lang_code.replace('.UTF-8', '')
+
+		# 🔍 نتحقق من اللغة الحالية باستخدام localectl
+		try:
+			current_locale_output = subprocess.check_output("localectl status", shell=True).decode()
+			if f"LANG={base_lang_code}.UTF-8" in current_locale_output:
+				QMessageBox.information(
+					self,
+					_("No Change Needed"),
+					_("The selected language is already active.")
+				)
+				return
+		except Exception as e:
+			QMessageBox.warning(self, _("Warning"), _("Could not verify current system language:\n") + str(e))
+
+		locale_line = f"{base_lang_code}.UTF-8 UTF-8"
+		cmd = (
+			'pkexec bash -c "'
+			f"sed -i 's/^#\\s*{locale_line}/{locale_line}/' /etc/locale.gen && "
+			"locale-gen && "
+			f"localectl set-locale LANG={base_lang_code}.UTF-8"
+			'"'
+		)
 
 		try:
-			# 1. قراءة وتعديل ملف locale.gen
-			# يجب أن يتم ذلك بصلاحيات الجذر
-			# لا يمكننا فتح الملف مباشرة للكتابة/القراءة بـ sudo في Python
-			# لذلك سنقوم بقراءة المحتوى أولاً، ثم تعديله، ثم إعادة كتابته
-			# ولكن بما أن القراءة والكتابة تتطلب صلاحيات، سنقوم بتنفيذ الأمر كـ sudo
+			process = subprocess.Popen(
+				cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+			)
+			stdout, stderr = process.communicate()
 
-			# قراءة محتوى locale.gen باستخدام cat و sudo
-			# لا توجد طريقة مباشرة "آمنة" لفتح ملف بصلاحيات sudo في بايثون للقراءة والكتابة
-			# الطريقة الأكثر أمانًا هي استخدام subprocess.run مع sudo لإنشاء ملف مؤقت
-			# أو تعديل الملف مباشرة
-			
-			# الطريقة الأفضل هي قراءة الملف، تعديل السطر، ثم كتابة الملف الجديد
-			# باستخدام subprocess مع صلاحيات sudo.
-			
-			# قراءة المحتوى الحالي لـ /etc/locale.gen
-			# نستخدم 'sudo cat' لضمان القدرة على قراءة الملف
-			try:
-				result = subprocess.run(["sudo", "cat", locale_gen_path], capture_output=True, text=True, check=True)
-				lines = result.stdout.splitlines()
-			except subprocess.CalledProcessError as e:
-				return False, f"Failed to read {locale_gen_path} with sudo: {e}"
-
-
-			# تحقق إذا السطر موجود مع أو بدون #
-			line_exists = False
-			for i, line in enumerate(lines):
-				if locale_line in line:
-					line_exists = True
-					# إذا السطر معلق (موجود #)، شيل ال#
-					if line.lstrip().startswith("#"):
-						lines[i] = line.replace("#", "", 1)
-					break
-
-			# لو السطر مش موجود خالص، ضيفه
-			if not line_exists:
-				lines.append(locale_line) # لا حاجة لـ '\n' هنا، joinlines ستضيفه
-
-			# 2. كتابة التعديلات إلى locale.gen باستخدام صلاحيات الجذر
-			# نستخدم أمر 'echo' أو 'tee' مع 'sudo' للكتابة إلى الملف
-			# أو يمكننا كتابة المحتوى في ملف مؤقت ثم نقله باستخدام sudo mv
-			# الطريقة الأكثر شيوعًا هي تمرير المحتوى لـ 'tee' عبر stdin
-			
-			new_content = "\n".join(lines) + "\n" # أعد بناء المحتوى مع أسطر جديدة
-
-			try:
-				# نستخدم 'tee' لكتابة المحتوى إلى الملف بصلاحيات sudo
-				# 'tee -a' للإلحاق، لكننا نريد الكتابة فوق المحتوى الحالي
-				# 'tee' بدون -a سيكتب فوق المحتوى
-				process = subprocess.run(
-					["sudo", "tee", locale_gen_path],
-					input=new_content.encode('utf-8'), # يجب أن يكون input bytes
-					check=True,
-					capture_output=True
+			if process.returncode == 0:
+				QMessageBox.information(
+					self,
+					_("Success"),
+					_("System language changed successfully. Please restart your system to apply changes.")
 				)
-				if process.stderr:
-					print(f"Stderr from tee: {process.stderr.decode('utf-8')}") # لغرض التصحيح
-			except subprocess.CalledProcessError as e:
-				return False, f"Failed to write to {locale_gen_path} with sudo: {e.stderr.decode('utf-8')}"
+			else:
+				error_message = stderr.decode().strip()
+				QMessageBox.critical(self, _("Error"), _("Failed to apply system language:\n") + error_message)
 
-
-			# 3. تشغيل locale-gen عشان يولد اللغات
-			# هذا الأمر يتطلب صلاحيات الجذر بشكل مباشر
-			try:
-				subprocess.check_call(["sudo", "locale-gen"])
-			except subprocess.CalledProcessError as e:
-				return False, f"Failed to run 'sudo locale-gen': {e.stderr.decode('utf-8')}"
-			except FileNotFoundError:
-				return False, "Error: 'sudo' command not found. Make sure sudo is installed and in your PATH."
-
-
-			# 4. كتابة اللغة الافتراضية في /etc/default/locale
-			# هذا أيضًا يتطلب صلاحيات الجذر
-			locale_default_content = f'LANG="{lang_code}.UTF-8"\n'
-			try:
-				process = subprocess.run(
-					["sudo", "tee", locale_default_path],
-					input=locale_default_content.encode('utf-8'),
-					check=True,
-					capture_output=True
-				)
-				if process.stderr:
-					print(f"Stderr from tee for default locale: {process.stderr.decode('utf-8')}") # لغرض التصحيح
-			except subprocess.CalledProcessError as e:
-				return False, f"Failed to write to {locale_default_path} with sudo: {e.stderr.decode('utf-8')}"
-
-
-			return True, None
-
+		except FileNotFoundError:
+			QMessageBox.critical(self, _("Error"), _("Required system tools not found. Please ensure 'pkexec', 'sed', and 'locale-gen' are installed."))
 		except Exception as e:
-			return False, str(e)
+			QMessageBox.critical(self, _("Error"), _("An unexpected error occurred:\n") + str(e))
 
 	def open_url(self, url):
 		webbrowser.open(url)
