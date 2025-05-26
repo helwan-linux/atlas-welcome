@@ -1,0 +1,47 @@
+# Maintainer: Saeed Badrelden <saeedbadrelden2021@gmail.com>
+
+pkgname=atlas-welcome
+_pkgname=atlas-welcome
+pkgver=1
+pkgrel=00
+pkgdesc="Welcome application for HelwanLinux"
+arch=('any')
+url="https://github.com/helwan-linux/atlas-welcome"
+license=('GPL3')
+conflicts=('hel-welcome-app')
+makedepends=('git')
+depends=('python-pyqt5' 'gettext' 'libwnck3' 'arandr')
+provides=("${pkgname}")
+install='readme.install'
+options=(!strip !emptydirs)
+source=(${_pkgname}::"git+${url}")
+sha256sums=('SKIP')
+
+package() {
+  # نسخ مجلد التطبيق إلى /usr/share
+  install -Dm755 -d "$pkgdir/usr/share/atlas-welcome"
+  cp -r "${srcdir}/${_pkgname}/share/atlas-welcome/"* "$pkgdir/usr/share/atlas-welcome/"
+
+  # تثبيت السكربت التنفيذي في /usr/bin
+  install -Dm755 "${srcdir}/${_pkgname}/share/atlas-welcome/atlas.py" "$pkgdir/usr/bin/atlas-welcome-app"
+
+  # تثبيت ملف .desktop في /usr/share/applications
+  install -Dm644 "${srcdir}/${_pkgname}/share/applications/atlas-welcome-app.desktop" "$pkgdir/usr/share/applications/atlas-welcome-app.desktop"
+
+  # تثبيت أيقونات scalable و 512x512
+  install -Dm644 "${srcdir}/${_pkgname}/share/hicolor/scalable/helwan-welcom.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/helwan-welcom.svg"
+  install -Dm644 "${srcdir}/${_pkgname}/share/hicolor/512x512/helwan-welcom.png" "$pkgdir/usr/share/icons/hicolor/512x512/apps/helwan-welcom.png"
+
+  # تثبيت ملفات الترجمة base.mo
+  find "${srcdir}/${_pkgname}/share/atlas-welcome/locales" -name "base.mo" -print0 | while IFS= read -r -d $'\0' file; do
+    lang_dir=$(basename "$(dirname "$(dirname "$file")")")
+    install -Dm644 "$file" "$pkgdir/usr/share/locale/$lang_dir/LC_MESSAGES/base.mo"
+  done
+
+  # تثبيت ملف الإعدادات في /etc/skel
+  install -Dm644 "${srcdir}/${_pkgname}/etc/skel/.config/atlas-welcome-app/settings.config" "$pkgdir/etc/skel/.config/atlas-welcome-app/settings.config"
+
+  # تثبيت ملف الرخصة
+  install -dm755 "$pkgdir/usr/share/licenses/${pkgname}"
+  install -Dm644 "${srcdir}/${_pkgname}/LICENSE" "$pkgdir/usr/share/licenses/${pkgname}/LICENSE"
+}

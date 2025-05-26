@@ -1,0 +1,9 @@
+post_install() {
+    echo -e "\n>> Atlas Welcome App has been successfully installed."
+    echo -e ">> Default configuration files are available in: /etc/skel/.config/atlas-welcome-app/\n"
+    echo -e ">> These settings will be copied automatically for new users upon creation.\n"
+}
+
+post_upgrade() {
+    post_install
+}
