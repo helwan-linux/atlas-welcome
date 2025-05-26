@@ -2,11 +2,12 @@
 Name=Atlas Welcome
 GenericName=Atlas Welcome
 X-GNOME-FullName=Atlas Welcome
-Comment=Welcome Application for HelwanLinux Installs
-Exec=/usr/local/bin/atlas-welcome-app
-Icon=helwan-welcom
+Comment=Welcome Application for Helwan Atlas Installs
+Exec=/usr/bin/atlas-welcome-app
+Icon=helwan-welcome
 Terminal=false
 Type=Application
-Categories=Utility;System;Settings;
-Keywords=welcome;tool;atlas;settings;
+Categories=Accessories;SystemTools;Settings;Utility
+Keywords=Atlas;welcome;tool;atlas;settings;
 StartupNotify=true
+Name[en_US]=Atlas Welcome
