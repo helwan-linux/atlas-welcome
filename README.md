@@ -37,59 +37,48 @@ Built-in cleaner for pacman to keep your system optimized and free from unnecess
 
 Directory Structure
 
-
-```bash
-helwan-welcome/
+```
+atlas-welcome/
 ├── etc/
 │   └── skel/
 │       └── .config/
-│           └── autostart/
-│               ├── helwan-welcome-app
-│               └── settings.conf
+│           └── atlas-welcome-app/
+│               └── settings.config
+│
 ├── usr/
 │   └── local/
 │       ├── bin/
-│       │   ├── helwan-welcome-app
-│       │   └── helwan-welcome-app.desktop
+│       │   ├── atlas-welcome-app
+│       │   └── atlas-welcome-app.desktop
+│       │
 │       └── share/
 │           ├── applications/
-│           │   ├── helwan-welcome-app.desktop
-│           │   └── helwan-welcome-app
-│           ├── locales/
-│           │   ├── ar_EG/LC_MESSAGES/
-│           │   ├── en_US/LC_MESSAGES/
-│           │   ├── es_ES/LC_MESSAGES/
-│           │   ├── pt_PT/LC_MESSAGES/
-│           │   ├── de_DE/LC_MESSAGES/
-│           │   ├── fr_FR/LC_MESSAGES/
-│           │   ├── ru_RU/LC_MESSAGES/
-│           │   ├── zh_CN/LC_MESSAGES/
-│           │   ├── ja_JP/LC_MESSAGES/
-│           │   ├── it_IT/LC_MESSAGES/
-│           │   ├── pl_PL/LC_MESSAGES/
-│           │   ├── ro_RO/LC_MESSAGES/
-│           │   ├── ur_PK/LC_MESSAGES/
-│           │   ├── fa_IR/LC_MESSAGES/
-│           │   ├── hu_HU/LC_MESSAGES/
-│           │   ├── da_DK/LC_MESSAGES/
-│           │   ├── sv_SE/LC_MESSAGES/
-│           │   ├── hi_HI/LC_MESSAGES/
-│           │   ├── bn_BD/LC_MESSAGES/
-│           │   ├── ta_IN/LC_MESSAGES/
-│           │   ├── tr_TR/LC_MESSAGES/
-│           │   ├── id_ID/LC_MESSAGES/
-│           │   ├── ko_KR/LC_MESSAGES/
-│           │   ├── fil_PH/LC_MESSAGES/
-│           │   └── vi_VN/LC_MESSAGES/
-│           ├── sources/
-│           │   ├── helwan-welcome-app.desktop
-│           │   └── helwan-welcome-app.py
-│           └── icons/
-│               └── hicolor/
-│                   └── scalable/
-│                       └── helwan-welcome.png
-
-```
+│           │   └── atlas-welcome-app.desktop
+│           │
+│           └── atlas-welcome/
+│               ├── locales/
+│               │   └── ar_EG.UTF-8/
+│               │       └── LC_MESSAGES/
+│               │           ├── base.mo
+│               │           └── base.po
+│               │
+│               ├── sources/
+│               │   └── logo.png
+│               │
+│               ├── atlas.py
+│               └── atlas-welcome-app.desktop
+│
+│           └── hicolor/
+│               ├── 512x512/
+│               │   └── helwan-welcom.png
+│               │
+│               └── scalable/
+│                   └── helwan-welcom.svg
+│
+├── LICENSE
+├── PKGBUILD
+├── readme.install
+└── README.md
 
 ## 📞 Contact
 
