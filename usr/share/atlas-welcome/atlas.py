@@ -1056,7 +1056,7 @@ class WelcomeApp(QWidget):
 		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		internet_btn = self.create_button(_("Install Internet Tools"),
 										 lambda: self.run_terminal_cmd(
-											 "sudo pacman -S --needed firefox kdeconnect thunderbird"))
+											 "sudo pacman -S --needed ai-gate electron33 firefox kdeconnect thunderbird"))
 		internet_btn.setObjectName("internet_tools_button")
 		layout.addWidget(internet_btn)
 
