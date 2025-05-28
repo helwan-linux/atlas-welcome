@@ -3,7 +3,7 @@
 pkgname=atlas-welcome
 _pkgname=atlas-welcome
 pkgver=1
-pkgrel=00
+pkgrel=01
 pkgdesc="Welcome application for HelwanLinux"
 arch=('any')
 url="https://github.com/helwan-linux/atlas-welcome"
