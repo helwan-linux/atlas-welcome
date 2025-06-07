@@ -1063,7 +1063,7 @@ class WelcomeApp(QWidget):
 		# تم تغيير self.tr() إلى _() هنا وإضافة اسم الكائن
 		office_btn = self.create_button(_("Install Office Suite"),
 									   lambda: self.run_terminal_cmd(
-										   "sudo pacman -S --needed libreoffice-fresh hunspell-en_US"))
+										   "sudo pacman -S --needed hel-tutorial hel-markdown libreoffice-fresh hunspell-en_US"))
 		office_btn.setObjectName("office_suite_button")
 		layout.addWidget(office_btn)
 
